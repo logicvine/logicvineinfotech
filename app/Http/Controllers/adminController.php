@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\Blog;
 use App\Models\ContactUs;
@@ -23,7 +24,6 @@ class adminController extends Controller
     }
     public function contactusform(Request $request)
     {
-
         $validate = $request->validate([
             'name' => 'nullable|string|max:100',
             'email' => 'nullable|email|max:100',
@@ -31,32 +31,38 @@ class adminController extends Controller
             'cmpname' => 'nullable|string|max:100',
             'message' => 'nullable|string',
         ]);
-
         ContactUs::create($validate);
 
 
         return back()->with('success', 'Thank you for contacting us!');
     }
     public function submitblogform(Request $request)
-    {
-        // dd($request);
+    {   
         if ($request->isMethod('post')) {
+            // dd($request->all());
             $validate = $request->validate([
-                'category' => 'nullable|string|max:100',
+                'cataegory' => 'nullable|string|max:100',
                 'image' => 'nullable|max:100',
                 'heading' => 'nullable|string|max:100',
                 'description' => 'nullable|string|max:100',
             ]);
+
             if ($files = $request->file('image')) {
                 $imageName = uniqid() . '.' . $files->extension();
                 $files->move(public_path('gallery'), $imageName);
                 $validate['image'] = $imageName;
             }
             Blog::create($validate);
+            // dd('fdf');
             return back()->with('success', 'Thank you for contacting us!');
         }
         else {
-            return view('admin.blog.view');
+            return view('admin.blog.create');
         }
+    }
+    public function viewblog(Request  $request){
+        $data = DB::table('blogs')->get();
+        return view('admin.blog.view', compact('data'));
+
     }
 }

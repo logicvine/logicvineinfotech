@@ -729,8 +729,9 @@
     </div>
   </div>
   <!-- cards -->
-
+  
   <!-- cta -->
+ 
   <section class="relative z-10 overflow-hidden bg-theme1 py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
       <div class="-mx-4 flex flex-wrap items-center">
@@ -1070,7 +1071,7 @@
 
     </div>
   </section>
-
+  @include('frontend.layouts.form')
   {{-- <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="max-w-2xl mx-auto text-center">

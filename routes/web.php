@@ -21,6 +21,7 @@ Route::group(['prefix' => 'my-admin'], function () {
     Route::get('contactus', [adminController::class, 'contactus'])->name('view.contactus');
     Route::post('viewcontact', [adminController::class, 'contactusform'])->name('submit.contactus');
 // admin . blog   //
-Route::get('create' , [adminController::class, 'submitblogform'])->name('create.blog');
+Route::get('view' , [adminController::class, 'viewblog'])->name('show.blog');
+Route::any('create' , [adminController::class, 'submitblogform'])->name('create.blog');
 
  });
