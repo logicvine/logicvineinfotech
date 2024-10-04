@@ -39,7 +39,6 @@ class adminController extends Controller
     public function submitblogform(Request $request)
     {   
         if ($request->isMethod('post')) {
-            // dd($request->all());
             $validate = $request->validate([
                 'cataegory' => 'nullable|string|max:100',
                 'image' => 'nullable|max:100',
@@ -53,7 +52,6 @@ class adminController extends Controller
                 $validate['image'] = $imageName;
             }
             Blog::create($validate);
-            // dd('fdf');
             return back()->with('success', 'Thank you for contacting us!');
         }
         else {
