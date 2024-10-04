@@ -52,7 +52,6 @@ class adminController extends Controller
                 $validate['image'] = $imageName;
             }
             Blog::create($validate);
-            // dd('fdf');
             return back()->with('success', 'Thank you for contacting us!');
         }
         else {
