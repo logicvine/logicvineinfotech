@@ -3,10 +3,18 @@
     @click.outside="sidebarToggle = false">
     <!-- SIDEBAR HEADER -->
     <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
+<<<<<<< Updated upstream
         <a href="index.html">
             <img src="{{asset('assets/src/images/logo/logo.svg')}}" alt="Logo" />
         </a>
 
+=======
+        <a href="{{ route('dashboard') }}">
+            <img class="3xl:h-16 2xl:h-12 h-10 block group-[]/nav:hidden" src="../assets/img/logo-white.png"
+              alt="logo" />
+            <img class="3xl:h-16 2xl:h-12 h-10 hidden group-[]/nav:block" src="../assets/img/logo.png" alt="logo" />
+          </a>
+>>>>>>> Stashed changes
         <button class="block lg:hidden" @click.stop="sidebarToggle = !sidebarToggle">
             <svg class="fill-current" width="20" height="18" viewBox="0 0 20 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
