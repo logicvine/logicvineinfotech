@@ -12,7 +12,7 @@ class WebController extends Controller
    public function about(){
     return view('about');
  }
-   public function blocklist(){
+   public function bloglist(){
     return view('bloglist');
  }
    public function blogdeatils(){

@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('content')
 
-  <!-- header end  -->
+<!-- header end  -->
 
   <!-- hero -->
   <section>
@@ -468,7 +468,7 @@
     </div>
   </section>
 
-  <section class="pb-10 bg-gray-100 sm:py-16 lg:py-24">
+  {{-- <section class="pb-10 bg-gray-100 sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="max-w-2xl mx-auto text-center">
         <h2 class="text-3xl font-bold leading-tight text-theme1 sm:text-4xl lg:text-5xl">Contact us</h2>
@@ -577,5 +577,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   @endsection

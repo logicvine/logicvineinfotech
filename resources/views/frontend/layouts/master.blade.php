@@ -106,7 +106,6 @@
 <body>
     @include('frontend.layouts.navbar')
     @yield('content')
-    @include('frontend.layouts.contactus')
     @include('frontend.layouts.footer')
     @include('frontend.layouts.script')
 </body>

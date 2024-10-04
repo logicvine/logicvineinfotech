@@ -34,7 +34,7 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
 
         </li>
         <li class="group">
-          <a href="{{ route('web.blogdeatils') }}"
+          <a href="{{ route('web.bloglist') }}"
             class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
             Blog
 
@@ -44,8 +44,7 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
         <li class="group">
           <a href="{{ route('web.contactus') }}"
             class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
-            Contact Ussssssssssssssss
-
+            Contact Us
           </a>
 
         </li>

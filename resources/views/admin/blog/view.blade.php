@@ -21,19 +21,19 @@
                     <div class="flex flex-col">
                         <div class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
                             <div class="p-2.5 xl:p-5">
-                                <h5 class="text-sm font-medium uppercase xsm:text-base">Source</h5>
+                                <h5 class="text-sm font-medium uppercase xsm:text-base">Category</h5>
                             </div>
                             <div class="p-2.5 text-center xl:p-5">
-                                <h5 class="text-sm font-medium uppercase xsm:text-base">Visitors</h5>
+                                <h5 class="text-sm font-medium uppercase xsm:text-base">image</h5>
                             </div>
                             <div class="p-2.5 text-center xl:p-5">
-                                <h5 class="text-sm font-medium uppercase xsm:text-base">Revenues</h5>
+                                <h5 class="text-sm font-medium uppercase xsm:text-base">heading</h5>
                             </div>
                             <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                                <h5 class="text-sm font-medium uppercase xsm:text-base">Sales</h5>
+                                <h5 class="text-sm font-medium uppercase xsm:text-base">description</h5>
                             </div>
                             <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                                <h5 class="text-sm font-medium uppercase xsm:text-base">Conversion</h5>
+                                <h5 class="text-sm font-medium uppercase xsm:text-base">date</h5>
                             </div>
                         </div>
 

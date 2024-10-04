@@ -29,6 +29,11 @@
                             Contact details
                         </a>
                     </li>
+                    <li>
+                        <a href="{{route('create.blog')  }}">
+                            blog
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
