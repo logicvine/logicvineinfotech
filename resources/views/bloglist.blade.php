@@ -299,9 +299,11 @@
               class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white  w-max">
               <span
                 class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-              <span
-                class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
-                Contact Us</span>
+             <a href="{{ route('web.contactus') }}">
+               <span
+               class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
+               Contact Us</span>
+              </a>
             </button>
           </div>
         </div>
