@@ -373,7 +373,7 @@
                                         class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5">
                                         <div class="flex items-center gap-3 p-2.5 xl:p-5">
                                             <div class="flex-shrink-0">
-                                                <img src="src/images/brand/brand-01.svg" alt="Brand" />
+                                                <img src="{{asset('assets/src/images/brand/brand-01.svg')}}" alt="Brand" />
                                             </div>
                                             <p class="hidden font-medium text-black dark:text-white sm:block">
                                                 Google
@@ -401,7 +401,7 @@
                                         class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5">
                                         <div class="flex items-center gap-3 p-2.5 xl:p-5">
                                             <div class="flex-shrink-0">
-                                                <img src="src/images/brand/brand-02.svg" alt="Brand" />
+                                                <img src="{{asset('assets/src/images/brand/brand-02.svg')}}" alt="Brand" />
                                             </div>
                                             <p class="hidden font-medium text-black dark:text-white sm:block">
                                                 Twitter
@@ -429,7 +429,7 @@
                                         class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5">
                                         <div class="flex items-center gap-3 p-2.5 xl:p-5">
                                             <div class="flex-shrink-0">
-                                                <img src="src/images/brand/brand-03.svg" alt="Brand" />
+                                                <img src="{{asset('assets/src/images/brand/brand-03.svg')}}" alt="Brand" />
                                             </div>
                                             <p class="hidden font-medium text-black dark:text-white sm:block">
                                                 Github
@@ -457,7 +457,7 @@
                                         class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5">
                                         <div class="flex items-center gap-3 p-2.5 xl:p-5">
                                             <div class="flex-shrink-0">
-                                                <img src="src/images/brand/brand-04.svg" alt="Brand" />
+                                                <img src="{{asset('assets/src/images/brand/brand-04.svg')}}" alt="Brand" />
                                             </div>
                                             <p class="hidden font-medium text-black dark:text-white sm:block">
                                                 Vimeo
@@ -484,7 +484,7 @@
                                     <div class="grid grid-cols-3 sm:grid-cols-5">
                                         <div class="flex items-center gap-3 p-2.5 xl:p-5">
                                             <div class="flex-shrink-0">
-                                                <img src="src/images/brand/brand-05.svg" alt="Brand" />
+                                                <img src="{{asset('assets/src/images/brand/brand-05.svg')}}" alt="Brand" />
                                             </div>
                                             <p class="hidden font-medium text-black dark:text-white sm:block">
                                                 Facebook
@@ -524,7 +524,7 @@
                                 <a href="messages.html"
                                     class="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4">
                                     <div class="relative h-14 w-14 rounded-full">
-                                        <img src="src/images/user/user-03.png" alt="User" />
+                                        <img src="{{asset('assets/src/images/user/user-03.png')}}" alt="User" />
                                         <span
                                             class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"></span>
                                     </div>
@@ -548,7 +548,7 @@
                                 <a href="messages.html"
                                     class="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4">
                                     <div class="relative h-14 w-14 rounded-full">
-                                        <img src="src/images/user/user-04.png" alt="User" />
+                                        <img src="{{asset('assets/src/images/user/user-04.png')}}" alt="User" />
                                         <span
                                             class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"></span>
                                     </div>
@@ -566,7 +566,7 @@
                                 <a href="messages.html"
                                     class="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4">
                                     <div class="relative h-14 w-14 rounded-full">
-                                        <img src="src/images/user/user-05.png" alt="User" />
+                                        <img src="{{asset('assets/src/images/user/user-05.png')}}" alt="User" />
                                         <span
                                             class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-6"></span>
                                     </div>
@@ -584,7 +584,7 @@
                                 <a href="messages.html"
                                     class="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4">
                                     <div class="relative h-14 w-14 rounded-full">
-                                        <img src="src/images/user/user-01.png" alt="User" />
+                                        <img src="{{asset('assets/src/images/user/user-01.png')}}" alt="User" />
                                         <span
                                             class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-3"></span>
                                     </div>
@@ -608,7 +608,7 @@
                                 <a href="messages.html"
                                     class="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4">
                                     <div class="relative h-14 w-14 rounded-full">
-                                        <img src="src/images/user/user-02.png" alt="User" />
+                                        <img src="{{asset('assets/src/images/user/user-02.png')}}" alt="User" />
                                         <span
                                             class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-7"></span>
                                     </div>
@@ -626,7 +626,7 @@
                                 <a href="messages.html"
                                     class="flex items-center gap-5 px-7.5 py-3 hover:bg-gray-3 dark:hover:bg-meta-4">
                                     <div class="relative h-14 w-14 rounded-full">
-                                        <img src="src/images/user/user-05.png" alt="User" />
+                                        <img src="{{asset('assets/src/images/user/user-05.png')}}" alt="User" />
                                         <span
                                             class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-meta-6"></span>
                                     </div>
