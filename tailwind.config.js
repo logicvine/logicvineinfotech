@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'theme1': '	#120B37',
+        'theme2': '	#F9BA32',
       },
       
       animation: {

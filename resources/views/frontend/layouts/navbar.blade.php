@@ -3,9 +3,9 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
 <div class="max-2xl:max-w-7xl 2xl:px-24 3xl:px-36  mx-auto lg:pb-3 group-[]/nav:py-3 py-3 px-6 lg:px-8 z-50">
   <div class="flex items-center justify-between relative">
     <a href="{{ route('web.index') }}">
-      <img class="3xl:h-16 2xl:h-12 h-10 block group-[]/nav:hidden" src="./assets/img/logo-white.png"
+      <img class="3xl:h-16 2xl:h-12 h-10 block group-[]/nav:hidden" src="{{ asset('assets/img/logo-white.png') }}"
         alt="logo" />
-      <img class="3xl:h-16 2xl:h-12 h-10 hidden group-[]/nav:block" src="./assets/img/logo.png" alt="logo" />
+      <img class="3xl:h-16 2xl:h-12 h-10 hidden group-[]/nav:block" src="{{ asset('assets/img/logo.png')}}" alt="logo" />
     </a>
 
     <div class="flex items-center gap-5">

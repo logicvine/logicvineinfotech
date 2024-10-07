@@ -23,6 +23,7 @@ Route::group(['prefix' => 'my-admin', 'middleware' => 'auth'], function () {
     Route::get('contactus', [adminController::class, 'contactus'])->name('view.contactus');
     // Route::post('viewcontact', [adminController::class, 'contactusform'])->name('submit.contactus');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+    // Route::post('viewcontact', [adminController::class, 'contactusform'])->name('submit.contactus');
 // admin . blog   //
 Route::get('view' , [adminController::class, 'viewblog'])->name('show.blog');
 // Route::any('create' , [adminController::class, 'submitblogform'])->name('create.blog');
