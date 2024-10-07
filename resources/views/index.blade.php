@@ -87,7 +87,7 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
         <div class="relative mb-12">
-          <img class="w-full rounded-md" src="./assets/img/what-we-do.png" alt="" />
+          <img class="w-full rounded-md" src="{{ asset('assets/img/what-we-do.png') }}" alt="" />
 
 
         </div>
@@ -644,7 +644,7 @@
           </div>
           <div
             class="size-full absolute left-0 top-0  translate-y-full md:group-hover:translate-y-0 duration-300 *:size-full *:object-cover">
-            <img src="./assets/img/inclusion-2.webp" alt="">
+            <img src="{{ asset('/assets/img/inclusion-2.webp') }}" alt="">
           </div>
         </div>
         <div
@@ -669,7 +669,7 @@
           </div>
           <div
             class="size-full absolute left-0 top-0  md:translate-y-full md:group-hover:translate-y-0 duration-300 *:size-full *:object-cover">
-            <img src="./assets/img/inclusion-1.webp" alt="">
+            <img src="{{ asset('assets/img/inclusion-1.webp') }}" alt="">
           </div>
         </div>
         <div
@@ -694,7 +694,7 @@
           </div>
           <div
             class="size-full absolute left-0 top-0  translate-y-full md:group-hover:translate-y-0 duration-300 *:size-full *:object-cover">
-            <img src="./assets/img/inclusion-3.webp" alt="">
+            <img src="{{ asset('/assets/img/inclusion-3.webp') }}" alt="">
           </div>
         </div>
         <div
@@ -719,7 +719,7 @@
           </div>
           <div
             class="size-full absolute left-0 top-0  md:translate-y-full md:group-hover:translate-y-0 duration-300 *:size-full *:object-cover">
-            <img src="./assets/img/inclusion-4.webp" alt="">
+            <img src="{{ asset('/assets/img/inclusion-4.webp') }}" alt="">
           </div>
         </div>
       </div>

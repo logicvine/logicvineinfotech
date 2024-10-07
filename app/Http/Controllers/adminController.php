@@ -38,10 +38,12 @@ class adminController extends Controller
     }
     public function submitblogform(Request $request)
     {   
+
         if ($request->isMethod('post')) {
+            // dd($request->all());    
             $validate = $request->validate([
                 'cataegory' => 'nullable|string|max:100',
-                'image' => 'nullable|max:100',
+                // 'image' => 'nullable',
                 'heading' => 'nullable|string|max:100',
                 'description' => 'nullable|string|max:100',
             ]);
