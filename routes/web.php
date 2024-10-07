@@ -15,16 +15,17 @@ Route::get('about', [WebController::class, 'about'])->name('web.about');
 Route::any('contact', [WebController::class, 'contact'])->name('web.contactus');
 Route::get('bloglist', [WebController::class, 'bloglist'])->name('web.bloglist');
 Route::get('blogdeatils', [WebController::class, 'blogdeatils'])->name('web.blogdeatils');
+Route::post('viewcontact', [adminController::class, 'submitblogform'])->name('submit.contactus');
 //   admin  //
 Route::group(['prefix' => 'my-admin', 'middleware' => 'auth'], function () {
     Route::get('index', [adminController::class, 'index'])->name('dashboard');
     Route::get('form', [adminController::class, 'form'])->name('admin.form');
     Route::get('contactus', [adminController::class, 'contactus'])->name('view.contactus');
-    Route::post('viewcontact', [adminController::class, 'contactusform'])->name('submit.contactus');
+    // Route::post('viewcontact', [adminController::class, 'contactusform'])->name('submit.contactus');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 // admin . blog   //
 Route::get('view' , [adminController::class, 'viewblog'])->name('show.blog');
-Route::any('create' , [adminController::class, 'submitblogform'])->name('create.blog');
+// Route::any('create' , [adminController::class, 'submitblogform'])->name('create.blog');
 
  });
 

@@ -22,21 +22,22 @@ class adminController extends Controller
     {
         return view('admin.contact.view');
     }
-    public function contactusform(Request $request)
-    {
-        $validate = $request->validate([
-            'name' => 'nullable|string|max:100',
-            'email' => 'nullable|email|max:100',
-            'phone' => 'nullable|string|max:15',
-            'cmpname' => 'nullable|string|max:100',
-            'message' => 'nullable|string',
-        ]);
-        ContactUs::create($validate);
-
-
-        return back()->with('success', 'Thank you for contacting us!');
-    }
     public function submitblogform(Request $request)
+    {
+        
+        $validate = $request->validate([
+            'name' => 'required|string|max:100',
+            'email' => 'required|email|max:100',
+            'phone' => 'required|string|max:15',
+            'cmpname' => 'required|string|max:100',
+            'message' => 'required|string',
+        ]);
+            return redirect()->back();
+            ContactUs::create($validate); 
+            // return back()->with('success', 'Thank you for contacting us!');
+        }
+    
+    public function contactusform(Request $request)
     {   
         if ($request->isMethod('post')) {
             $validate = $request->validate([
