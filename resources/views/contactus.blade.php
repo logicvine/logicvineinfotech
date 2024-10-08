@@ -1,5 +1,20 @@
 @extends('frontend.layouts.master')
 @section('content')
+
+<div class="relative">
+    <div
+        class="h-96 relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+        <img  src="{{ asset('assets/img/contactus.jpg') }}" alt="">
+    </div>
+    <div
+        class="absolute top-1/2 -translate-y-1/2 flex items-center px-8 sm:px-12 md:px-16 h-full text-white mx-auto w-full">
+        <div class="w-full">
+            <div class="text-6xl md:text-[100px] font-bold !leading-[130%] text-center uppercase">
+                How Can We Help?</div>
+
+        </div>
+    </div>
+</div>
     <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="max-w-2xl mx-auto text-center">

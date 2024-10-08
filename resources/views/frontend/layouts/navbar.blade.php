@@ -18,11 +18,32 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
 
         </li>
         <li class="group relative">
-          <a href="" id="#services"
-            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black  relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
+          <a href="#services" id="#services"
+            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
             Services
 
+            <span class="*:size-4 mt-1 group-hover:rotate-180 duration-300">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px"
+                width="200px" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                  d="m112 184 144 144 144-144"></path>
+              </svg>
+            </span>
           </a>
+          <div
+            class="absolute invisible trans opacity-0 group-hover:visible group-hover:opacity-100 text-left w-max bg-gray-100 rounded-md py-4 -bottom-44 left-1/2 -translate-x-1/2 after:absolute after:size-full after:-top-4 after:-z-10 after:bg-transparent">
+            <ul class="*:py-1 *:px-4 *:text-base *:font-medium ">
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/webdevelopment.html">Web
+                  Development</a></li>
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/mobileappdevelopment.html">Mobile
+                  App Development</a></li>
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/softwaredevelopment.html">Software
+                  Development</a></li>
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/ecommerce.html">eCommerce
+                  Development</a></li>
+
+            </ul>
+          </div>
 
         </li>
         <li class="group">
@@ -97,8 +118,8 @@ class="fixed inset-0 -z-[1011] pointer-events-none backdrop-blur-xl bg-theme1 pe
 class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-theme1/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
 <div class="flex items-center justify-between">
   <a href class="-ml-1.5">
-    <span class="sr-only">hpit</span>
-    <img class="h-7 w-auto" width="174" height="48" src="./assets/img/logo-white.png" alt=" Logo" />
+    <span class="sr-only">Logicvine</span>
+    <img class="h-7 w-auto 	" width="174" height="48" src="{{ asset('assets/img/logo-white.png') }}" alt=" Logo" />
   </a>
   <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
     <span class="sr-only">Close menu</span>
@@ -114,7 +135,60 @@ class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y
       <div class="flex flex-col gap-5 items-center">
         <div class="flex flex-col w-full gap-y-5">
           <a href="javascript:;" class="text-sm font-bold text-gray-50">Home</a>
-          <a href="javascript:;" class="text-sm font-bold text-gray-50">Services</a>
+          <div class="relative flex flex-col gap-y-3">
+            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
+            <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+              Services
+              <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </label>
+            <div class="w-full peer-checked/mm:block hidden">
+              <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+
+                  <div>
+                    <div class="flex-auto">
+                      <a href="./Services/webdevelopment.html" class="block font-semibold opacity-80">
+                        Web Development
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex-auto">
+                      <a href="./Services/mobileappdevelopment.html" class="block font-semibold opacity-80">
+                        Mobile App Development
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex-auto">
+                      <a href="./Services/softwaredevelopment.html" class="block font-semibold opacity-80">
+                        Software Development
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex-auto">
+                      <a href="./Services/ecommerce.html" class="block font-semibold opacity-80">
+                        eCommerce Development
+                        <span class="absolute inset-0 z-[1]"></span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="javascript:;" class="text-sm font-bold text-gray-50">About Us</a>
           <a href="javascript:;" class="text-sm font-bold text-gray-50">Blog</a>
           <a href="javascript:;" class="text-sm font-bold text-gray-50">Contact Us</a>

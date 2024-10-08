@@ -249,7 +249,7 @@
               </div>
               <div class="flex  flex-nowrap gap-5 pt-4">
                 <div class="w-1/3 !shrink-0"><a href="#" class="inline-block aspect-[1/.6] *:object-cover *:size-full">
-                    <img src="./assets/img/recentblog-1.jpg" alt="">
+                    <img src="{{ asset('assets/img/blog-4.jpg') }}" alt="">
                   </a></div>
                 <div class="w-9/12">
                   <div class=""><a class="text-lg font-medium leading-[100%]" href="">How to create a taxi rid App like
