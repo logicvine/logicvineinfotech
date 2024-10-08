@@ -4,7 +4,7 @@
     <div class="relative">
         <div
             class="h-96 relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
-            <img src="./assets/img/blog.jpg" alt="">
+            <img  src="{{ asset('assets/img/blog.jpg') }}" alt="">
         </div>
         <div
             class="absolute top-1/2 -translate-y-1/2 flex items-center px-8 sm:px-12 md:px-16 h-full text-white mx-auto w-full">
@@ -39,8 +39,9 @@
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="flex items-end justify-between">
                 <div class="flex-1 text-center mb-10">
-                    <h2 class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold text-slate-900">Latest from blog
-                    </h2>
+                    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                        <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Latest From 
+                        </span> Blog</h1>
                     <p class="md:text-xl text-base font-medium text-balance mt-5 text-slate-900">Welcome to the Logic Vine
                         Infotech blog, your go-to resource for insights, trends, and tips in digital development. Explore
                         articles
@@ -86,8 +87,8 @@
                                   amet
                                   sint. Velit officia consequat duis enim velit mollit.'}}</p>
                               <a href="#" title=""
-                                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                  Continue Reading
+                                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-500 border-b-2 border-transparent hover:border-yellow-500 focus:border-border-yellow-500 hover:text-yellow-500">
+                                  Continue Reading      
                                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                       fill="currentColor">
                                       <path fill-rule="evenodd"
@@ -312,7 +313,7 @@
         </div>
     </section>
     <!-- cta -->
-    <section class="relative z-10 overflow-hidden bg-theme1 py-16 px-8">
+    {{-- <section class="relative z-10 overflow-hidden bg-theme1 py-16 mt-5 px-8">
         <div class="max-w-7xl mx-auto lg:px-8 px-6">
             <div class="-mx-4 flex flex-wrap items-center">
                 <div class="w-full px-4 lg:w-1/2">
@@ -413,6 +414,6 @@
                 </g>
             </svg>
         </span>
-    </section>
+    </section> --}}
     <!-- cta -->
 @endsection
