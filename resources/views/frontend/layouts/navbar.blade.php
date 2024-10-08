@@ -18,11 +18,32 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
 
         </li>
         <li class="group relative">
-          <a href="" id="#services"
-            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black  relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
+          <a href="#services" id="#services"
+            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
             Services
 
+            <span class="*:size-4 mt-1 group-hover:rotate-180 duration-300">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="200px"
+                width="200px" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+                  d="m112 184 144 144 144-144"></path>
+              </svg>
+            </span>
           </a>
+          <div
+            class="absolute invisible trans opacity-0 group-hover:visible group-hover:opacity-100 text-left w-max bg-gray-100 rounded-md py-4 -bottom-44 left-1/2 -translate-x-1/2 after:absolute after:size-full after:-top-4 after:-z-10 after:bg-transparent">
+            <ul class="*:py-1 *:px-4 *:text-base *:font-medium ">
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/webdevelopment.html">Web
+                  Development</a></li>
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/mobileappdevelopment.html">Mobile
+                  App Development</a></li>
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/softwaredevelopment.html">Software
+                  Development</a></li>
+              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/ecommerce.html">eCommerce
+                  Development</a></li>
+
+            </ul>
+          </div>
 
         </li>
         <li class="group">
