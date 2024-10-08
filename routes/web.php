@@ -36,6 +36,6 @@ Route::group(['prefix' => 'my-admin', 'middleware' => 'guest'], function () {
 });
 
 
-Route::get('/service', function () {
-    return view('service.service');  // Referencing blog inside the service folder
+Route::get('/Web-Development-company', function () {
+    return view('service.webdevelopment');  // Referencing blog inside the service folder
 });
