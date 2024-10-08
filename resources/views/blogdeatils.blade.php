@@ -4,7 +4,7 @@
   <div class="relative">
     <div
       class="h-96 relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
-      <img src="./assets/img/blog.jpg" alt="">
+      <img  src="{{ asset('assets/img/blog.jpg') }}" alt="">
     </div>
     <div
       class="absolute top-1/2 -translate-y-1/2 flex items-center px-8 sm:px-12 md:px-16 h-full text-white mx-auto w-full">
@@ -23,7 +23,7 @@
           <div class="size-full rounded-md">
             <div class="pb-14">
               <div class="size-full rounded-md">
-                <img src="./assets/img/blog-1.jpg" alt="">
+                <img  src="{{ asset('assets/img/blog.jpg') }}" alt="">
               </div>
               <div class="flex items-center gap-3 py-4 border-b flex-wrap ">
                 <div class="flex items-center gap-1 shrink-0"><span class="inline-block size-5 text-slate-700"><svg
@@ -83,7 +83,7 @@
             </div>
             <div class="pb-14">
               <div class="size-full rounded-md *:aspect-[1/.5] *:size-full *:object-cover">
-                <img src="./assets/img/blog-2.webp" alt="">
+                <img src="{{ asset('assets/img/blog-3.jpg') }}" alt="">
               </div>
               <div class="flex items-center gap-3 py-4 border-b flex-wrap ">
                 <div class="flex items-center gap-1 shrink-0"><span class="inline-block size-5 text-slate-700"><svg
@@ -144,7 +144,7 @@
             </div>
             <div class="pb-14">
               <div class="size-full rounded-md aspect-[1/.5] *:size-full *:object-cover">
-                <img src="./assets/img/blog-3.jpg" alt="">
+                <img src="{{ asset('assets/img/blog-4.jpg') }}" alt="">
               </div>
               <div class="flex items-center gap-3 py-4 border-b flex-wrap ">
                 <div class="flex items-center gap-1 shrink-0"><span class="inline-block size-5 text-slate-700"><svg
@@ -208,13 +208,13 @@
             <div class="">
               <div class="text-2xl pb-5  font-semibold">Search</div>
               <div class="flex items-center gap-4 w-full pb-4">
-                <div class="py-[1.5px] rounded-lg bg-slate-600 w-14 "></div>
-                <div class="py-[1.5px] rounded-lg bg-slate-100 w-full"></div>
+                <div class="py-[1.5px] rounded-lg bg-yellow-400 w-14 "></div>
+                <div class="py-[1.5px] rounded-lg bg-yellow-200 w-full"></div>
               </div>
-              <div class="pt-5">
-                <div class="flex items-center bg-slate-100 px-4"><input class="h-[70px] bg-transparent w-full "
+                <div class="pt-5">
+                <div class="flex items-center bg-slate-100 px-4"><input class="h-[70px] bg-transparent w-full  focus:border-none focus:outline-0"
                     placeholder="Search..." type="text"><button
-                    class="h-12 w-14 *:size-6 bg-slate-800 text-white flex items-center justify-center "><svg
+                    class="h-12 w-14 *:size-6 bg-yellow-500 text-white flex items-center justify-center "><svg
                       stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="100%"
                       width="100%" xmlns="http://www.w3.org/2000/svg">
                       <path fill="none" stroke-miterlimit="10" stroke-width="32"
@@ -227,8 +227,8 @@
             <div class="pt-16">
               <div class="text-2xl pb-5 font-semibold">Categories</div>
               <div class="flex items-center gap-4 w-full pb-4">
-                <div class="py-[1.5px] rounded-lg bg-slate-600 w-14 "></div>
-                <div class="py-[1.5px] rounded-lg bg-slate-100 w-full"></div>
+                <div class="py-[1.5px] rounded-lg bg-yellow-400 w-14 "></div>
+                <div class="py-[1.5px] rounded-lg bg-yellow-200 w-full"></div>
               </div>
               <div class="pt-5">
                 <ul>
@@ -244,8 +244,8 @@
             <div class="pt-16">
               <div class="text-2xl pb-5 font-semibold">Recent Posts</div>
               <div class="flex items-center gap-4 w-full pb-4">
-                <div class="py-[1.5px] rounded-lg bg-slate-600 w-14 "></div>
-                <div class="py-[1.5px] rounded-lg bg-slate-100 w-full"></div>
+                <div class="py-[1.5px] rounded-lg bg-yellow-400 w-14 "></div>
+                <div class="py-[1.5px] rounded-lg bg-yellow-200 w-full"></div>
               </div>
               <div class="flex  flex-nowrap gap-5 pt-4">
                 <div class="w-1/3 !shrink-0"><a href="#" class="inline-block aspect-[1/.6] *:object-cover *:size-full">
@@ -312,7 +312,7 @@
   </section>
 
 
-  <!-- cta -->
+  {{-- <!-- cta -->
   <section class="relative z-10 overflow-hidden bg-theme1 py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
       <div class="-mx-4 flex flex-wrap items-center">
@@ -392,7 +392,7 @@
       </svg>
     </span>
   </section>
-  <!-- cta -->\
+  <!-- cta --> --}}
 
 
 

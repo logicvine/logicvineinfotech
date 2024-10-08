@@ -42,11 +42,13 @@
   <section class="py-10 bg-gray-100 sm:py-16 ">
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center">
-        <div class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold text-black">
-          Number Tell Our Story
-        </div>
-        <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Amet minim mollit non deserunt ullamco est sit
-          aliqua dolor do amet sint. Velit officia consequat duis.</p>
+       
+        <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+          <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Expertise & 
+ 
+          </span>Success Stories</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+
       </div>
 
       <div class="grid grid-cols-1 gap-8 mt-10 text-center sm:gap-x-8 md:grid-cols-3">
@@ -79,7 +81,10 @@
 
   <!-- our value -->
   <div class="py-10 bg-theme1 sm:py-16">
-    <div class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold text-center text-white pb-4">Our Value</div>
+    <h1 class="mb-4 text-3xl font-bold text-gray-100  md:text-5xl lg:text-6xl text-center">
+      <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-gray-100 from-yellow-400">
+        Integrity at 
+      </span> Our Core.</h1>
     <div class="max-w-7xl grid grid-cols-3 gap-4 items-stretch *:h-full *:*:h-full">
       <div class="relative flex flex-col justify-center overflow-hidden py-4 ">
         <div
@@ -168,45 +173,137 @@
   </div>
   <!-- our value -->
 
-  <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+  <!-- about section -->
+  <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
+      <div class="grid items-center grid-cols-1 overflow-hidden gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
         <div class="relative mb-12">
-          <img class="w-full rounded-md" src="{{ asset('/assets/img/what-we-do.png')}}" alt="" />
+          <img class="w-full rounded-md z-10" src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
+          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -top-32 left-0 rotate-45"></div>
+          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
+          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
 
 
         </div>
 
         <div>
           <div class="flex gap-4 items-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full">
-              <svg class="w-8 h-8 text-theme1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+            <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
+             <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
+              <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+             </div>
             </div>
-            <div class="font-semibold text-base text-theme1">Logic Vine Infotech</div>
+            <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
           </div>
-          <h2 class="mt-8 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-            Discover Logic Vine Infotech
-          </h2>
+        
+   <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+     <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
+        </span> Digital Solutions.</h1>
+     <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+
           <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
             tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
             we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
           </p>
           <button
-            class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-theme1 mt-4  w-max">
+            class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500 mt-4  w-max">
             <span
-              class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+              class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
             <span
-              class="relative text-base font-semibold text-theme1 transition duration-300 group-hover:text-white ease">Contact
-              Us</span>
+              class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+              Coffee With Us</span>
           </button>
         </div>
       </div>
     </div>
   </section>
+
+    <!-- cta -->
+ 
+    <section class="relative z-10 overflow-hidden bg-theme1 py-8 sm:py-14 lg:py-16 px-8">
+      <div class="max-w-7xl mx-auto lg:px-8 px-6">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="text-center lg:text-left ">
+              <div class="mb-10 lg:mb-0 ">
+                <h1
+                  class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-yellow-500 ">
+                  Contact Us for a Free Consultation
+                </h1>
+                <p class="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <div class="text-center lg:text-right">
+  
+              <button
+                class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500  w-max">
+                <span
+                  class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                <span
+                  class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
+                  Contact Us</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="absolute top-0 right-0 -z-10">
+        <svg width="388" height="250" viewBox="0 0 388 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z"
+            fill="url(#paint0_linear_971_6910)"></path>
+          <defs>
+            <linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.520507" stop-color="white"></stop>
+              <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg></span><span class="absolute top-0 right-0 -z-10"><svg width="324" height="250" viewBox="0 0 324 220"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z"
+            fill="url(#paint0_linear_971_6911)"></path>
+          <defs>
+            <linearGradient id="paint0_linear_971_6911" x1="60.5" y1="111" x2="287" y2="111"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.520507" stop-color="white"></stop>
+              <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+        </svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.5">
+            <circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="#e6b313"></circle>
+            <circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="#e6b313"></circle>
+            <circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="#e6b313"></circle>
+            <circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="#e6b313"></circle>
+            <circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="#e6b313"></circle>
+            <circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="#e6b313"></circle>
+            <circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="#e6b313"></circle>
+            <circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="#e6b313"></circle>
+            <circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="#e6b313"></circle>
+            <circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="#e6b313"></circle>
+            <circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="#e6b313"></circle>
+            <circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="#e6b313"></circle>
+            <circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="#e6b313"></circle>
+            <circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="#e6b313"></circle>
+            <circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="#e6b313"></circle>
+            <circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="#e6b313"></circle>
+            <circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="#e6b313"></circle>
+            <circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="#e6b313"></circle>
+            <circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="#e6b313"></circle>
+            <circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="#e6b313"></circle>
+          </g>
+        </svg>
+      </span>
+    </section>
+    <!-- cta -->
 
 
   <!-- blog -->
@@ -214,8 +311,10 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="flex items-end justify-between">
         <div class="flex-1 text-center mb-10">
-          <h2 class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold text-slate-900">Latest from blog
-          </h2>
+          <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+            <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">
+              Latest From 
+            </span> Blog.</h1>
           <p class="md:text-xl text-base font-medium text-balance mt-5 text-slate-900">Welcome to the Logic Vine
             Infotech blog, your go-to resource for insights, trends, and tips in digital development. Explore articles
             on mobile app development, eCommerce strategies, innovative software solutions, and industry best practices.
@@ -270,7 +369,7 @@
                   amet
                   sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" title=""
-                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
+                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 hover:text-yellow-500 duration-500 transition-all duration-200 border-b-2 border-transparent hover:border-yellow-500 focus:border-yellow-500">
                   Continue Reading
                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -305,7 +404,7 @@
                   amet
                   sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" title=""
-                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
+                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 hover:text-yellow-500 duration-500 transition-all duration-200 border-b-2 border-transparent hover:border-yellow-500 focus:border-yellow-500">
                   Continue Reading
                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -341,7 +440,7 @@
                   amet
                   sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" title=""
-                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
+                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 hover:text-yellow-500 duration-500 transition-all duration-200 border-b-2 border-transparent hover:border-yellow-500 focus:border-yellow-500">
                   Continue Reading
                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -377,7 +476,7 @@
                   amet
                   sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" title=""
-                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
+                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 hover:text-yellow-500 duration-500 transition-all duration-200 border-b-2 border-transparent hover:border-yellow-500 focus:border-yellow-500">
                   Continue Reading
                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -412,7 +511,7 @@
                   amet
                   sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" title=""
-                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
+                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 hover:text-yellow-500 duration-500 transition-all border-b-2 border-transparent hover:border-yellow-500 focus:border-yellow-500">
                   Continue Reading
                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
@@ -448,7 +547,7 @@
                   amet
                   sint. Velit officia consequat duis enim velit mollit.</p>
                 <a href="#" title=""
-                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
+                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 hover:text-yellow-500 duration-500 transition-all duration-200 border-b-2 border-transparent hover:border-yellow-500 focus:border-yellow-500">
                   Continue Reading
                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
