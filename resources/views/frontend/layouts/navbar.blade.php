@@ -12,14 +12,14 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
       <ul class="lg:flex gap-8 hidden">
         <li class="group">
           <a href="{{ route('web.index') }}"
-            class="flex itms-center text-sm 2xl:text-base 3xl:text-lg text-white group-[]/nav:text-black">
+            class="flex itms-center text-sm 2xl:text-base 3xl:text-lg text-white group-[]/nav:text-black relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
             Home
           </a>
 
         </li>
         <li class="group relative">
           <a href="" id="#services"
-            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
+            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black  relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
             Services
 
           </a>
@@ -27,14 +27,14 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
         </li>
         <li class="group">
           <a href="{{ route('web.about') }}"
-            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
+            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black  relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
             About Us
           </a>
 
         </li>
         <li class="group">
           <a href="{{ route('web.bloglist') }}"
-            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
+            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black  relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
             Blog
 
           </a>
@@ -42,7 +42,7 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
         </li>
         <li class="group">
           <a href="{{ route('web.contactus') }}"
-            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black">
+            class="flex items-center text-sm 2xl:text-base 3xl:text-lg text-white font-medium group-[]/nav:text-black  relative  before:absolute before:border-b-2 before:border-yellow-500 focus:text-yellow-500 active:text-yellow-500 x   before:size-full before:-translate-x-full overflow-hidden hover:before:translate-x-0 before:duration-300 hover:text-yellow-500">
             Contact Us
           </a>
 

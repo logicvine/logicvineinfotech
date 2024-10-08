@@ -18,11 +18,11 @@
           <div class="mt-3 grid space-y-3">
             <p>
               <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
-                href="javascript:;">About Logic Vine</a>
+              href="{{ route('web.about') }}">About Logic Vine</a>
             </p>
             <p>
               <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
-                href="javascript:;">Home</a>
+              href="{{ route('web.index') }}">Home</a>
             </p>
             <p>
               <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
@@ -31,11 +31,11 @@
             </p>
             <p>
               <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
-                href="javascript:;">Blog</a>
+              href="{{ route('web.bloglist') }}">Blog</a>
             </p>
             <p>
               <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
-                href="javascript:;">Contact Us</a>
+              href="{{ route('web.contactus') }}">Contact Us</a>
             </p>
           </div>
         </div>

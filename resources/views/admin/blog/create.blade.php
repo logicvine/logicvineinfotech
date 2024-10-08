@@ -6,7 +6,7 @@
                 Contact Form
             </h3>
         </div>
-        <form method="POST" action="{{ route('create.blog') }}" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('submit.blog') }}" enctype="multipart/form-data">
             @csrf
             <div class="p-6.5">
                 <div class="mb-4.5 flex flex-col gap-6 xl:flex-row">

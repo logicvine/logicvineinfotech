@@ -3,7 +3,9 @@
     <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-3xl font-bold leading-tight text-theme1 sm:text-4xl lg:text-5xl">Contact us</h2>
+                <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r to-gray-900 from-yellow-400">Contact  
+                    </span> Us</h1>
                 <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-500">Amet minim mollit non deserunt
                     ullamco
                     est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
@@ -54,61 +56,59 @@
                 <div class="mt-6 overflow-hidden bg-white rounded-xl">
                     <div class="px-6 py-12 sm:p-12">
                         <h3 class="text-3xl font-semibold text-center text-theme1">Send us a message</h3>
-                        <form action="{{ route('submit.contactus') }}" method="POST" class="mt-14">
+                        <div id="successMessage" class="alert alert-success hidden text-green-600"></div>
+                
+                        <form id="contactForm" action="{{ route('submit.contactus') }}" method="POST" class="mt-14">
                             @csrf
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Your name </label>
+                                    <label for="name" class="text-base font-medium text-theme1">Your name</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="text" name="name" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="text" name="name" id="name" placeholder="Enter your full name"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
-                                    @error('name') <div  class="alert text-red-600">{{ $message }} </div>@enderror
+                                    <div id="nameError" class="alert text-red-600"></div>
                                 </div>
-    
+                
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Email address </label>
+                                    <label for="email" class="text-base font-medium text-theme1">Email address</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="email" name="email" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="email" name="email" id="email" placeholder="Enter your email"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
-                                    @error('email') <div  class="alert text-red-600">{{ $message }} </div>@enderror
+                                    <div id="emailError" class="alert text-red-600"></div>
                                 </div>
-    
+                
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Phone number </label>
+                                    <label for="phone" class="text-base font-medium text-theme1">Phone number</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="tel" name="phone" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
-                                    @error('phone') <div  class="alert text-red-600">{{ $message }} </div>@enderror
+                                    <div id="phoneError" class="alert text-red-600"></div>
                                 </div>
-    
+                
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Company name </label>
+                                    <label for="cmpname" class="text-base font-medium text-theme1">Company name</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="text" name="cmpname" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="text" name="cmpname" id="cmpname" placeholder="Enter your company name"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
-                                    @error('cmpname') <div  class="alert text-red-600">{{ $message }} </div>@enderror
+                                    <div id="cmpnameError" class="alert text-red-600"></div>
                                 </div>
-    
+                
                                 <div class="sm:col-span-2">
-                                    <label for="" class="text-base font-medium text-theme1"> Message </label>
+                                    <label for="message" class="text-base font-medium text-theme1">Message</label>
                                     <div class="mt-2.5 relative">
-                                        <textarea name="message" id="" placeholder="Type your msg"
+                                        <textarea name="message" id="message" placeholder="Type your message"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md resize-y focus:outline-none focus:border-theme1 caret-theme1"
                                             rows="4"></textarea>
                                     </div>
-                                    @error('message') <div  class="alert text-red-600">{{ $message }} </div>@enderror
+                                    <div id="messageError" class="alert text-red-600"></div>
                                 </div>
-    
+                
                                 <div class="sm:col-span-2">
-                                    <button type="submit"
+                                    <button type="submit" id="submitForm"
                                         class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-theme1/80 focus:bg-theme1/80">
                                         Send
                                     </button>
@@ -117,6 +117,61 @@
                         </form>
                     </div>
                 </div>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#contactForm').on('submit', function(e) {
+                            e.preventDefault();
+                            $('#nameError').text('');
+                            $('#emailError').text('');
+                            $('#phoneError').text('');
+                            $('#cmpnameError').text('');
+                            $('#messageError').text('');
+                            $('#successMessage').addClass('hidden').text('');
+                
+                            var formData = {
+                                name: $('#name').val(),
+                                email: $('#email').val(),
+                                phone: $('#phone').val(),
+                                cmpname: $('#cmpname').val(),
+                                message: $('#message').val(),
+                                _token: $('input[name="_token"]').val()
+                            };
+                
+                            $.ajax({
+                                url: "{{ route('submit.contactus') }}",
+                                method: 'POST',
+                                data: formData,
+                                success: function(response) {
+                                    if(response.success) {
+                                        $('#contactForm')[0].reset();
+                                        $('#successMessage').removeClass('hidden').text(response.message);
+                                    }
+                                },
+                                error: function(response) {
+                                    var errors = response.responseJSON.errors;
+                                    
+                                    if (errors.name) {
+                                        $('#nameError').text(errors.name[0]);
+                                    }
+                                    if (errors.email) {
+                                        $('#emailError').text(errors.email[0]);
+                                    }
+                                    if (errors.phone) {
+                                        $('#phoneError').text(errors.phone[0]);
+                                    }
+                                    if (errors.cmpname) {
+                                        $('#cmpnameError').text(errors.cmpname[0]);
+                                    }
+                                    if (errors.message) {
+                                        $('#messageError').text(errors.message[0]);
+                                    }
+                                }
+                            });
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
