@@ -7,7 +7,7 @@
   <section>
     <div class="md:h-dvh relative h-auto bg-no-repeat bg-right max-md:!bg-none ">
       <div class="absolute size-full inset-0 -z-50">
-        <img src="./assets/img/team2.jpg" class="size-full object-cover" alt="">
+        <img src="{{ asset('/assets/img/team2.jpg') }}" class="size-full object-cover" alt="">
       </div>
       <div class="container px-3 h-full mx-auto grid md:grid-cols-2 grid-cols-1">
         <div
@@ -172,7 +172,7 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
         <div class="relative mb-12">
-          <img class="w-full rounded-md" src="./assets/img/what-we-do.png" alt="" />
+          <img class="w-full rounded-md" src="{{ asset('/assets/img/what-we-do.png')}}" alt="" />
 
 
         </div>
@@ -210,7 +210,7 @@
 
 
   <!-- blog -->
-  <section class="pt-10 bg-gray-100 sm:py-16 lg:py-24">
+  {{-- <section class="pt-10 bg-gray-100 sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="flex items-end justify-between">
         <div class="flex-1 text-center mb-10">
@@ -466,6 +466,6 @@
       </div>
 
     </div>
-  </section>
-  @include('frontend.layouts.form')
+  </section> --}}
+    @include('frontend.layouts.form')
   @endsection

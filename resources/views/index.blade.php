@@ -1,9 +1,9 @@
 @extends('frontend.layouts.master')
 @section('content')
   <!-- hero section  -->
-  <section class="relative min-h-dvh flex justify-center items-center w-full z-50">
+  <section class="relative min-h-dvh pt-16 flex justify-center items-center w-full z-50">
     <div
-      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:bg-gradient-to-br before:from-black/50 before:via-black/90 before:to-theme1/70 before:backdrop-blur-sm">
+      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:bg-gradient-to-br before:from-black/50 before:via-yellow-500/60 before:to-theme1/90 before:mix-blend-exclusion before:backdrop-blur-sm">
       <video id="home-hero-video"
         class="per-video__video fadein max-sm:w-full w-full max-sm:object-cover max-sm:h-full xl:w-full md:object-cover md:h-full"
         src="https://cdn.pixabay.com/video/2015/10/16/1046-142621379_large.mp4" autoplay="autoplay" loop="loop"
@@ -18,11 +18,11 @@
               <div class=" text-center items-center ">
                 <div class="size-full flex flex-col justify-center">
                   <div class="2xl:text-[75px] 3xl:text-[100px] lg:text-7xl md:text-6xl text-4xl font-bold ">
-                    Where Technology Meets Excellence.
+                    Where Technology Meets Excellence
                     <span class="before:block  relative inline-block">
                       <span
                         class="relative text-white [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">"Meets
-                        Excellence."</span>
+                        Excellence"</span>
                     </span>
                   </div>
                   <div
@@ -62,7 +62,7 @@
                   <button
                     class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white  w-max">
                     <span
-                      class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                      class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                     <span
                       class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
                       Coffee With Us</span>
@@ -94,28 +94,28 @@
 
         <div>
           <div class="flex gap-4 items-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-white rounded-full">
-              <svg class="w-8 h-8 text-theme1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            <div class="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full">
+              <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                   d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <div class="font-semibold text-base text-theme1">Logic Vine Infotech</div>
+            <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
           </div>
-          <h2 class="mt-8 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
+          <div class="mt-3 text-3xl font-bold leading-tight text-yellow-500 sm:text-4xl lg:text-5xl lg:leading-tight">
             Discover Who We Are and What We Stand For
-          </h2>
+          </div>
           <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
             tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
             we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
           </p>
           <button
-            class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-theme1 mt-4  w-max">
+            class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500 mt-4  w-max">
             <span
-              class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+              class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
             <span
-              class="relative text-base font-semibold text-theme1 transition duration-300 group-hover:text-white ease">Let
+              class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
               Coffee With Us</span>
           </button>
         </div>
@@ -147,25 +147,25 @@
 
             <li>
               <label for="webDevelopment"
-                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights:checked]:bg-theme1/80 group-has-[.insights:checked]:text-white font-semibold group-has-[.insights:checked]:border-slate-700">
+                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights:checked]:bg-yellow-500 group-has-[.insights:checked]:text-white font-semibold group-has-[.insights:checked]:border-slate-700">
                 Web Development
               </label>
             </li>
             <li>
               <label for="mobileappdevelopment"
-                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.mobileappdevelopment:checked]:bg-theme1/80 group-has-[.mobileappdevelopment:checked]:text-white font-semibold group-has-[.mobileappdevelopment:checked]:border-slate-700">
+                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.mobileappdevelopment:checked]:bg-yellow-500 group-has-[.mobileappdevelopment:checked]:text-white font-semibold group-has-[.mobileappdevelopment:checked]:border-slate-700">
                 Mobile App Development
               </label>
             </li>
             <li>
               <label for="bespokeSoftware"
-                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights1:checked]:bg-theme1/80 group-has-[.insights1:checked]:text-white font-semibold group-has-[.insights1:checked]:border-slate-700">
+                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights1:checked]:bg-yellow-500 group-has-[.insights1:checked]:text-white font-semibold group-has-[.insights1:checked]:border-slate-700">
                 Software Development
               </label>
             </li>
             <li>
               <label for="eCommerce"
-                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.eCommerce:checked]:bg-theme1/80 group-has-[.eCommerce:checked]:text-white font-semibold group-has-[.insights1:checked]:border-slate-700">
+                class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.eCommerce:checked]:bg-yellow-500 group-has-[.eCommerce:checked]:text-white font-semibold group-has-[.insights1:checked]:border-slate-700">
                 eCommerce Development
               </label>
             </li>
@@ -218,7 +218,7 @@
               <div
                 class="flex items-center flex-wrap overflow-hidden mt-12 gap-8 *:w-auto *:text-center *:gap-2 *:*:text-center">
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#E96228]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -229,7 +229,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">HTML5</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#2E9FD3]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -240,7 +240,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">CSS3</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#D6002F]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -251,7 +251,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Angular JS</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#48903E]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -262,7 +262,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Node.Js</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#F54D3A]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -273,7 +273,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Laraval</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#F7CD3E]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -1171,7 +1171,7 @@
 
                 <div class="sm:col-span-2">
                   <button type="submit"
-                    class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-theme1/80 focus:bg-theme1/80">
+                    class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500 focus:bg-yellow-500">
                     Send
                   </button>
                 </div>
