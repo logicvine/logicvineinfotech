@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Blog;
@@ -26,7 +27,7 @@ class adminController extends Controller
     {
         return view('admin.contact.view');
     }
-    public function submitblogform(Request $request)
+    public function submitcontactus(Request $request)
     {
         $validate = $request->validate([
             'name' => 'required|string|max:100',
@@ -39,42 +40,15 @@ class adminController extends Controller
         $mailService = new ContactUsMail();
         $to = 'rishishekhawat.img@gmail.com';
         $subject = 'You have receive Notification for contact';
-        $body = $request->phone.'<- This is contact number, & email is ->'.$request->email;
+        $body = $request->phone . '<- This is contact number, & email is ->' . $request->email;
 
         $response = $mailService->sendMail($to, $subject, $body);
         return response()->json([
             'success' => true,
             'message' => 'Your request hasa been send'
         ], 200);
-        }
+    }
+
+
     
-    public function contactusform(Request $request)
-    {   
-
-        if ($request->isMethod('post')) {
-            // dd($request->all());    
-            $validate = $request->validate([
-                'cataegory' => 'nullable|string|max:100',
-                // 'image' => 'nullable',
-                'heading' => 'nullable|string|max:100',
-                'description' => 'nullable|string|max:100',
-            ]);
-
-            if ($files = $request->file('image')) {
-                $imageName = uniqid() . '.' . $files->extension();
-                $files->move(public_path('gallery'), $imageName);
-                $validate['image'] = $imageName;
-            }
-            Blog::create($validate);
-            return back()->with('success', 'Thank you for contacting us!');
-        }
-        else {
-            return view('admin.blog.create');
-        }
-    }
-    public function viewblog(Request  $request){
-        $data = DB::table('blogs')->get();
-        return view('admin.blog.view', compact('data'));
-
-    }
 }

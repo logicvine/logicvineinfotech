@@ -23,14 +23,15 @@
             "Unlocking Creativity, Empowering Perspectives: Your Premier Source for Thoughtful Insights and
             Inspiration!"
           </div>
-          <button
-            class="rounded-lg px-3.5 mt-4 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white  w-max">
-            <span
-              class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-            <span
-              class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
-              Coffee With Us</span>
-          </button>
+          <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+            <div 
+              class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+              <span
+                class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+              <span 
+                class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+                Coffee With Us</span>
+          </a>
         </div>
 
       </div>
@@ -209,14 +210,16 @@
             tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
             we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
           </p>
-          <button
-            class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500 mt-4  w-max">
-            <span
-              class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-            <span
-              class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
-              Coffee With Us</span>
-          </button>
+          <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+            <div 
+              class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+              <span
+                class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+              <span 
+                class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+                Coffee With Us</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -242,14 +245,15 @@
           <div class="w-full px-4 lg:w-1/2">
             <div class="text-center lg:text-right">
   
-              <button
-                class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500  w-max">
-                <span
-                  class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                <span
-                  class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
-                  Contact Us</span>
-              </button>
+              <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+                <div 
+                  class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+                  <span
+                    class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                  <span 
+                    class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+                    Coffee With Us</span>
+              </a>
             </div>
           </div>
         </div>
