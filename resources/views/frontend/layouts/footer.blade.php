@@ -5,7 +5,7 @@
         <div class="col-span-3">
           <a class="flex-none inline-block max-w-40 text-xl font-semibold text-white focus:outline-none focus:opacity-80"
             href="javascript:;" aria-label="Brand">
-            <img src="./assets/img/logo-white.png" alt="logo" class="w-full">
+            <img  src="{{ asset('assets/img/logo-white.png') }}" alt="logo" class="w-full">
           </a>
           <p class="text-gray-400 text-base py-5">
             Top IT Consulting Company Delivering Custom Innovative Solutions

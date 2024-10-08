@@ -3,7 +3,7 @@
   <!-- hero section  -->
   <section class="relative min-h-dvh pt-16 flex justify-center items-center w-full z-50">
     <div
-      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:bg-gradient-to-br before:from-black/50 before:via-yellow-500/60 before:to-theme1/90 before:mix-blend-exclusion before:backdrop-blur-sm">
+      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:bg-gradient-to-br before:from-black/50  before:to-theme1">
       <video id="home-hero-video"
         class="per-video__video fadein max-sm:w-full w-full max-sm:object-cover max-sm:h-full xl:w-full md:object-cover md:h-full"
         src="https://cdn.pixabay.com/video/2015/10/16/1046-142621379_large.mp4" autoplay="autoplay" loop="loop"
@@ -83,29 +83,37 @@
   <!-- hero section end  -->
 
   <!-- about section -->
-  <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+  <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
+      <div class="grid items-center grid-cols-1 overflow-hidden gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
         <div class="relative mb-12">
-          <img class="w-full rounded-md" src="{{ asset('assets/img/what-we-do.png') }}" alt="" />
+          <img class="w-full rounded-md z-10" src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
+          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -top-32 left-0 rotate-45"></div>
+          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
+          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
 
 
         </div>
 
         <div>
           <div class="flex gap-4 items-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full">
+            <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
+             <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
               <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+             </div>
             </div>
             <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
           </div>
-          <div class="mt-3 text-3xl font-bold leading-tight text-yellow-500 sm:text-4xl lg:text-5xl lg:leading-tight">
-            Discover Who We Are and What We Stand For
-          </div>
+        
+<h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+  <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
+  </span> Digital Solutions.</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+
           <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
             tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
             we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
@@ -125,11 +133,11 @@
   <!-- about section end -->
 
   <section id="services" class="mt-auto bg-theme1 overflow-hidden">
-    <div class="max-w-7xl px-6 lg:px-8 w-full py-10 lg:pt-20 mx-auto">
+    <div class="max-w-7xl px-6 lg:px-8 w-full py-8 sm:py-14 lg:py-16 mx-auto">
       <div class="pb-7 sm:pb-10 text-center">
-        <div class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold text-white">
-          Our Expert Solutions
-        </div>
+        <h1 class="mb-4 text-3xl font-bold text-gray-100 dark:text-white md:text-5xl lg:text-6xl">
+          <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-gray-100 from-yellow-400">Our Expert  
+          </span> Solutions</h1>
         <div class="md:text-xl text-base font-medium text-balance mt-5 text-white">
           At Logic Vine Infotech, we provide a comprehensive range of innovative digital services designed to elevate
           your
@@ -345,7 +353,7 @@
               <div
                 class="flex items-center flex-wrap overflow-hidden mt-12 gap-8 *:w-auto *:text-center *:gap-2 *:*:text-center">
                 <div>
-                  <div class="md:size-10  size-8 mx-auto text-theme1">
+                  <div class="md:size-10  size-8 mx-auto text-[#58C1F0]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -356,7 +364,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Flutter</div>
                 </div>
                 <div>
-                  <div class="md:size-10  size-8 mx-auto text-theme1">
+                  <div class="md:size-10  size-8 mx-auto text-[#F48D3A]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -367,7 +375,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Swift</div>
                 </div>
                 <div>
-                  <div class="md:size-10  size-8 mx-auto text-theme1">
+                  <div class="md:size-10  size-8 mx-auto text-[#01D1F7]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -378,7 +386,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">React Native</div>
                 </div>
                 <div>
-                  <div class="md:size-10  size-8 mx-auto text-theme1">
+                  <div class="md:size-10  size-8 mx-auto text-[#C518C9]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <title></title>
@@ -388,7 +396,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Kotlin</div>
                 </div>
                 <div>
-                  <div class="md:size-10  size-8 mx-auto text-theme1">
+                  <div class="md:size-10  size-8 mx-auto text-[#75BC54]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -399,7 +407,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Android</div>
                 </div>
                 <div>
-                  <div class="md:size-10  size-8 mx-auto text-theme1">
+                  <div class="md:size-10  size-8 mx-auto text-[#A7B9B7]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -452,7 +460,7 @@
               <div
                 class="flex items-center flex-wrap overflow-hidden mt-12 gap-8 *:w-auto *:text-center *:gap-2 *:*:text-center">
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#EC4134]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -463,7 +471,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Java</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#005697]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -474,7 +482,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">C#</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#7377AD]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -485,7 +493,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">PHP</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#AB1105]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <title></title>
@@ -497,7 +505,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Ruby</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#3971A1]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -508,7 +516,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Python</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#E59729]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -560,7 +568,7 @@
               <div
                 class="flex items-center flex-wrap overflow-hidden mt-12 gap-8 *:w-auto *:text-center *:gap-2 *:*:text-center">
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#EA6021]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -571,7 +579,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Magento</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#90B945]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -582,7 +590,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Shopify</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#207196]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0"
                       viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -593,7 +601,7 @@
                   <div class="sm:text-base text-sm font-semibold mt-1">Wordpress</div>
                 </div>
                 <div>
-                  <div class="md:size-10 size-8 mx-auto text-theme1">
+                  <div class="md:size-10 size-8 mx-auto text-[#322F3D]">
                     <svg class="size-full" stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                       viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <title></title>
@@ -732,14 +740,14 @@
   
   <!-- cta -->
  
-  <section class="relative z-10 overflow-hidden bg-theme1 py-16 px-8">
+  <section class="relative z-10 overflow-hidden bg-theme1 py-8 sm:py-14 lg:py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
       <div class="-mx-4 flex flex-wrap items-center">
         <div class="w-full px-4 lg:w-1/2">
           <div class="text-center lg:text-left ">
             <div class="mb-10 lg:mb-0 ">
               <h1
-                class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-yellow-500 ">
                 Contact Us for a Free Consultation
               </h1>
               <p class="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
@@ -751,9 +759,9 @@
           <div class="text-center lg:text-right">
 
             <button
-              class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white  w-max">
+              class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500  w-max">
               <span
-                class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
               <span
                 class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
                 Contact Us</span>
@@ -787,26 +795,26 @@
       </svg></span><span class="absolute top-4 left-4 -z-10"><svg width="43" height="56" viewBox="0 0 43 56" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.5">
-          <circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="white"></circle>
-          <circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="white"></circle>
-          <circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="white"></circle>
-          <circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="white"></circle>
-          <circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="white"></circle>
-          <circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="white"></circle>
-          <circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="white"></circle>
-          <circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="white"></circle>
-          <circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="white"></circle>
-          <circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="white"></circle>
-          <circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="white"></circle>
-          <circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="white"></circle>
-          <circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="white"></circle>
-          <circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="white"></circle>
-          <circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="white"></circle>
-          <circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="white"></circle>
-          <circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="white"></circle>
-          <circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="white"></circle>
-          <circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="white"></circle>
-          <circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="white"></circle>
+          <circle cx="40.9984" cy="1.49626" r="1.49626" transform="rotate(90 40.9984 1.49626)" fill="#e6b313"></circle>
+          <circle cx="27.8304" cy="1.49626" r="1.49626" transform="rotate(90 27.8304 1.49626)" fill="#e6b313"></circle>
+          <circle cx="14.6644" cy="1.49626" r="1.49626" transform="rotate(90 14.6644 1.49626)" fill="#e6b313"></circle>
+          <circle cx="1.49642" cy="1.49626" r="1.49626" transform="rotate(90 1.49642 1.49626)" fill="#e6b313"></circle>
+          <circle cx="40.9984" cy="14.6642" r="1.49626" transform="rotate(90 40.9984 14.6642)" fill="#e6b313"></circle>
+          <circle cx="27.8304" cy="14.6642" r="1.49626" transform="rotate(90 27.8304 14.6642)" fill="#e6b313"></circle>
+          <circle cx="14.6644" cy="14.6642" r="1.49626" transform="rotate(90 14.6644 14.6642)" fill="#e6b313"></circle>
+          <circle cx="1.49642" cy="14.6642" r="1.49626" transform="rotate(90 1.49642 14.6642)" fill="#e6b313"></circle>
+          <circle cx="40.9984" cy="27.8302" r="1.49626" transform="rotate(90 40.9984 27.8302)" fill="#e6b313"></circle>
+          <circle cx="27.8304" cy="27.8302" r="1.49626" transform="rotate(90 27.8304 27.8302)" fill="#e6b313"></circle>
+          <circle cx="14.6644" cy="27.8302" r="1.49626" transform="rotate(90 14.6644 27.8302)" fill="#e6b313"></circle>
+          <circle cx="1.49642" cy="27.8302" r="1.49626" transform="rotate(90 1.49642 27.8302)" fill="#e6b313"></circle>
+          <circle cx="40.9984" cy="40.9982" r="1.49626" transform="rotate(90 40.9984 40.9982)" fill="#e6b313"></circle>
+          <circle cx="27.8304" cy="40.9963" r="1.49626" transform="rotate(90 27.8304 40.9963)" fill="#e6b313"></circle>
+          <circle cx="14.6644" cy="40.9982" r="1.49626" transform="rotate(90 14.6644 40.9982)" fill="#e6b313"></circle>
+          <circle cx="1.49642" cy="40.9963" r="1.49626" transform="rotate(90 1.49642 40.9963)" fill="#e6b313"></circle>
+          <circle cx="40.9984" cy="54.1642" r="1.49626" transform="rotate(90 40.9984 54.1642)" fill="#e6b313"></circle>
+          <circle cx="27.8304" cy="54.1642" r="1.49626" transform="rotate(90 27.8304 54.1642)" fill="#e6b313"></circle>
+          <circle cx="14.6644" cy="54.1642" r="1.49626" transform="rotate(90 14.6644 54.1642)" fill="#e6b313"></circle>
+          <circle cx="1.49642" cy="54.1642" r="1.49626" transform="rotate(90 1.49642 54.1642)" fill="#e6b313"></circle>
         </g>
       </svg>
     </span>
@@ -815,12 +823,14 @@
 
 
   <!-- blog -->
-  <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+  <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="flex items-end justify-between">
         <div class="flex-1 text-center mb-10">
-          <h2 class="lg:text-6xl !leading-[150%] md:text-6xl text-4xl font-bold text-slate-900">Latest from blog
-          </h2>
+          <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+            <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">
+              Latest From 
+            </span> Blog.</h1>
           <p class="md:text-xl text-base font-medium text-balance mt-5 text-slate-900">Welcome to the Logic Vine
             Infotech blog, your go-to resource for insights, trends, and tips in digital development. Explore articles
             on mobile app development, eCommerce strategies, innovative software solutions, and industry best practices.
