@@ -763,7 +763,7 @@
               <span
                 class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
               <span
-                class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
+                class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
                 Contact Us</span>
             </button>
           </div>

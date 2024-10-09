@@ -3,7 +3,7 @@
 
 <div class="relative">
     <div
-        class="h-96 relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+        class="md:h-96 h-72 *:size-full relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
         <img  src="{{ asset('assets/img/contactus.jpg') }}" alt="">
     </div>
     <div

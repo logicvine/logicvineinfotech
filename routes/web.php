@@ -48,5 +48,5 @@ Route::get('/eCommerceapp-Development-company', function () {
 });
 
 Route::get('/software-Development-company', function () {
-    return view('service.softwaredevelopment');  // Referencing blog inside the service folder
+    return view('service.software development');  // Referencing blog inside the service folder
 });
