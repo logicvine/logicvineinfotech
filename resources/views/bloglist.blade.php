@@ -3,7 +3,7 @@
     <!-- header end  -->
     <div class="relative">
         <div
-            class="h-96 relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+            class="md:h-96 h-72 *:size-full relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
             <img  src="{{ asset('assets/img/blog.jpg') }}" alt="">
         </div>
         <div
@@ -47,17 +47,15 @@
                         articles
                         on mobile app development, eCommerce strategies, innovative software solutions, and industry best
                         practices.
-                        Stay updated with our expert analysis and thought leadership to help you navigate the digital
-                        landscape and
                         empower your business.
                     </p>
                 </div>
             </div>
             <div class="max-w-7xl mx-auto  mt-4">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     @forelse ($data as $item)
-                    <div class="swiper-slide">
-                      <div class="overflow-hidden bg-white rounded shadow">
+                    <div class="">
+                      <div class="overflow-hidden bg-white rounded shadow h-full">
                           <div class="p-5">
                               <div class="relative">
                                   <a href="#" title="" class="block aspect-w-4 aspect-h-3">

@@ -33,15 +33,13 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
           <div
             class="absolute invisible trans opacity-0 group-hover:visible group-hover:opacity-100 text-left w-max bg-gray-100 rounded-md py-4 -bottom-44 left-1/2 -translate-x-1/2 after:absolute after:size-full after:-top-4 after:-z-10 after:bg-transparent">
             <ul class="*:py-1 *:px-4 *:text-base *:font-medium ">
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="{{ route('service.webdevelopment') }}">Web
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.webdevelopment') }}">Web
                   Development</a></li>
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="{{ route('service.mobileappdevelopment') }}">Mobile
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.mobileappdevelopment') }}">Mobile
                   App Development</a></li>
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="{{ route('service.softwaredevelopment') }}">Software
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.softwaredevelopment') }}">Software
                   Development</a></li>
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="{{ route('service.ecommerce') }}">eCommerce
-                  Development</a></li>
-
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.ecommerce') }}">eCommerce
             </ul>
           </div>
 

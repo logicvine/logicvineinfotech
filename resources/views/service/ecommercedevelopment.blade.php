@@ -4,8 +4,8 @@
   {{-- <!-- hero section  --> --}}
   <section class="relative min-h-dvh pt-14 flex justify-center items-center w-full z-50">
     <div
-      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:mix-blend-darken before:bg-gradient-to-br before:from-blue-600/50 before:via-theme1/50 before:to-theme1/80">
-      <img src="{{ asset('assets/img/blog-4.jpg') }}" alt="" class="size-full">
+      class="absolute *:object-cover inset-0 !h-full size-full before:absolute before:inset-0 before:mix-blend-darken before:bg-gradient-to-br before:from-blue-600/50 before:via-theme1/50 before:to-theme1/80">
+      <img src="{{ asset('assets/img/ecommerce.jpg') }}" alt="" class="size-full">
     </div>
     <div class=" h-full !z-20 relative">
       <div class=" h-full relative z-50">
@@ -16,7 +16,7 @@
               <div class=" text-center items-center ">
                 <div class="size-full max-w-5xl flex flex-col justify-center">
                   <div class="2xl:text-[75px] 3xl:text-[100px] lg:text-7xl md:text-6xl text-4xl font-bold ">
-                    Web Development
+                    eCommerce App Development
                     <span class="before:block  relative inline-block">
                       <span
                         class="relative text-white [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">"Company"</span>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="w-full px-4 lg:w-1/2">
-          <div class="justify-center flex lg:justify-end">
+          <div class="text-center flex lg:justify-end">
 
             <button
               class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500  w-max">
@@ -203,14 +203,12 @@
                         />
                     </svg>
                 </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Custom Website Development
-
+                <h3 class="mt-8 text-lg font-semibold text-black">
+                  B2B Ecommerce Solutions
                 </h3>
                 <p class="mt-4 text-base text-gray-600">
-                  At LogicVine Infotech, we create bespoke websites that reflect your brand and drive results, ensuring a seamless user experience and optimal performance.
-
-</p>
-            </div>
+                  At LogicVine Infotech, we provide tailored B2B eCommerce solutions designed to streamline your business operations and enhance customer relationships. Our scalable platforms offer seamless user experiences, secure transactions, and advanced features that align with your business goals, driving growth and efficiency.
+                </div>
 
             <div>
                 <div class="relative flex items-center justify-center mx-auto">
@@ -221,12 +219,12 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                 </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Custom Web Development Consulting
-
-                </h3>
+                <h3 class="mt-8 text-lg font-semibold text-black">B2C Ecommerce Solutions </h3>
                 <p class="mt-4 text-base text-gray-600">
-                  At Logic Vine Infotech, we offer personalized consulting services to help you navigate the complexities of web development, ensuring your project is strategically aligned with your business goals and industry best practices</p>
-            </div>
+                  At LogicVine Infotech, we specialize in B2C eCommerce solutions that deliver engaging, user-friendly platforms tailored to your customers' needs. Our solutions offer seamless shopping experiences, secure transactions, and customizable features that help drive sales and grow your brand.
+
+
+                </div>
 
             <div>
                 <div class="relative flex items-center justify-center mx-auto">
@@ -237,10 +235,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                 </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Custom Frontend Development
-                </h3>
-                <p class="mt-4 text-base text-gray-600">At Twin Power Software, we create tailor-made frontend solutions that deliver visually appealing and intuitive interfaces, enhancing user engagement and brand identity.
-
+                <h3 class="mt-8 text-lg font-semibold text-black">D2C Ecommerce Solutions</h3>
+                <p class="mt-4 text-base text-gray-600">
+                  At LogicVine Infotech, we provide D2C eCommerce solutions that empower brands to connect directly with consumers. Our platforms offer a seamless shopping experience, secure payment systems, and personalized features, helping you build strong customer relationships and drive brand growth.
                 </p>
             </div>
 
@@ -253,116 +250,104 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                 </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Custom Backend Development  </h3>
-                <p class="mt-4 text-base text-gray-600">
-                  At Logic Vine Infotech, we create bespoke websites that reflect your brand and drive results, ensuring a seamless user experience and optimal performance.
-
-</p>
-            </div>
-
-            <div>
-                <div class="relative flex items-center justify-center mx-auto">
-                    <svg class="text-gray-100" width="65" height="70" viewBox="0 0 65 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M64.5 26C64.5 46.4345 56.4345 70 36 70C15.5655 70 0 53.9345 0 33.5C0 13.0655 13.0655 0 33.5 0C53.9345 0 64.5 5.56546 64.5 26Z" />
-                    </svg>
-                    <svg class="absolute text-gray-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">UI/UX designing Services
+                <h3 class="mt-8 text-lg font-semibold text-black">Ecommerce Marketplace Solutions
 
                 </h3>
                 <p class="mt-4 text-base text-gray-600">
-                  Besides developing a custom website, focusing on the design details is a must to ensure project success. So, we have a team of creative heads who put their 100% effort into creating unique business applications and websites that are enough to steal your customers' hearts. Seek UX/UI designing services for your custom web development solutions.
-
-
-                </p>
-            </div>
-
-            <div>
-                <div class="relative flex items-center justify-center mx-auto">
-                    <svg class="text-yellow-100" width="78" height="78" viewBox="0 0 78 78" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.49996 28.0002C4.09993 47.9554 14.1313 66.7885 35.5 71.5002C56.8688 76.2119 68.0999 58.4553 72.5 38.5001C76.9 18.5449 68.3688 12.711 47 7.99931C25.6312 3.28759 12.9 8.04499 8.49996 28.0002Z" />
-                    </svg>
-                    <svg class="absolute text-yellow-500 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-                        />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Custom Web Support
-
-                </h3>
-                <p class="mt-4 text-base text-gray-600">
-                  Developing a fully customized website shouldn't be the sole aim of a business owner. Maintaining an application or website timely help to keep it running smoothly and allows businesses to withstand competition. With our custom web support and maintenance services, we can help your business website stay updated as per the ongoing market trends.
-
+                  At LogicVine Infotech, we offer comprehensive eCommerce marketplace solutions that enable businesses to create dynamic, multi-vendor platforms. Our solutions provide seamless user experiences, secure payment systems, and powerful management tools, helping you build, scale, and manage successful online marketplaces.
 
                 </p>
             </div>
 
-            <div>
-                <div class="relative flex items-center justify-center mx-auto">
-                    <svg class="text-gray-100" width="62" height="64" viewBox="0 0 62 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z"></path>
-                    </svg>
-                    <svg class="absolute text-gray-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Hire Custom Web Developers
-
-                </h3>
-                <p class="mt-4 text-base text-gray-600">
-                  Want to hire custom web developers from one of the best web development firms? We can be your saviour. With a pool of dedicated web developers, we can offer you the best-ever assistance for custom web development. Do not look for customer web developers for hire anywhere else; instead, avail our services now.
-
-                </p>
-            </div>
-
-            <div>
-                <div class="relative flex items-center justify-center mx-auto">
-                    <svg class="text-rose-100" width="72" height="75" viewBox="0 0 72 75" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
-                    </svg>
-                    <svg class="absolute text-rose-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-                        />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Custom Web Migration & Upgradation
-
-                </h3>
-                <p class="mt-4 text-base text-gray-600">
-                  Business apps and websites need constant upgradation to reinvigorate digital experiences. With our custom web migration and upgradation services, you can make your existing business solutions result-driven and successful. Upgrade your business website to the newest industry standards and give your customers an amazing web experience
-
-
-                </p>
-            </div>
-
-            <div>
-                <div class="relative flex items-center justify-center mx-auto">
-                    <svg class="text-lime-100" width="62" height="65" viewBox="0 0 62 65" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 13.0264C0 33.4609 8.06546 64.0264 28.5 64.0264C48.9345 64.0264 62 50.4604 62 30.0259C62 9.59135 59.4345 4.0256 39 4.0256C18.5655 4.0256 0 -7.40819 0 13.0264Z" />
-                    </svg>
-
-                    <svg class="absolute text-lime-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">API Development Services</h3>
-                <p class="mt-4 text-base text-gray-600">
-                  At Dev Technosys, we'll work with you to integrate external systems with your web app. We use specially created APIs to increase the functionality and possibilities of a business website. Avail custom web development solutions from us and experience free-of-cost API development services as well.
-                </p>
-            </div>
+           
         </div>
     </div>
 </section>
 
   {{-- cards-2 --}}
+ <div class="bg-theme1">
+  <div class="w-full pt-4 mx-auto text-center">
+    
+  <h1 class="mb-4 mx-auto  lg:w-2/3 text-center text-balance text-3xl font-bold text-gray-100 dark:text-white md:text-5xl lg:text-6xl">
+    <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-gray-100 from-yellow-400">Why Choose Custom
+
+       </span>  eCommerce Development</h1>
+  </div>
+
+  <div class="container pt-5 md:p-5 sm:p-8 p-5 mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+    <div class="
+        flex flex-col overflow-x-auto md:pt-8
+
+        [&_table]:table-auto [&_table]:border-separate [&_table]:border-spacing-4
+
+        [&_thead]:md:text-sm [&_thead]:text-xs [&_thead]:uppercase
+
+        [&_thead>tr>th]:text-gray-100 [&_thead>tr>th]:md:px-5 [&_thead>tr>th]:px-3 [&_thead>tr>th]:md:font-bold [&_thead>tr>th]:font-normal [&_thead>tr>th]:text-left first:[&_thead>tr>th]:rounded-l-xl last:[&_thead>tr>th]:rounded-r-xl [&_thead>tr>th]:text-nowrap
+
+        [&_tbody]:md:text-base [&_tbody]:text-sm
+
+        [&_tbody>tr>td]:bg-gray-100 [&_tbody>tr>td]:cursor-default [&_tbody>tr>td]:border-2 [&_tbody>tr>td]:border-black/5 [&_tbody>tr>td]:text-black [&_tbody>tr>td]:md:p-5 [&_tbody>tr>td]:p-3 [&_tbody>tr>td]:text-left [&_tbody>tr>td]:rounded-xl
+        ">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Custom Solution</th>
+            <th scope="col">Ready-Made Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Customization</td>
+            <td>Highly customizable to meet specific business needs and requirements.</td>
+            <td>Limited customization options, often adhering to pre-defined features and designs.</td>
+          </tr>
+          <tr>
+            <td>Scalability</td>
+            <td>Easily scalable to accommodate future growth and changes in business requirements.</td>
+            <td>May have limitations on scalability and may require additional modules for expansion.</td>
+          </tr>
+          <tr>
+            <td>Unique Features</td>
+            <td>Can include unique features and functionalities tailored to the business model.</td>
+            <td>Limited to pre-built features; difficult to incorporate unique or specialized features.</td>
+          </tr>
+          <tr>
+            <td>Integration</td>
+            <td>Seamless integration with existing systems, APIs, and third-party services.</td>
+            <td>Limited integration options; may require additional development for specific integrations.</td>
+          </tr>
+          <tr>
+            <td>Control Over Updates</td>
+            <td>Complete control over updates and maintenance schedules.</td>
+            <td>Dependent on the vendor for updates, which may not align with specific business timelines.</td>
+          </tr>
+          <tr>
+            <td>Ownership and Control</td>
+            <td>Full ownership and control over the source code and intellectual property.</td>
+            <td>Limited ownership and control as the solution is provided by a third-party vendor.</td>
+          </tr>
+          <tr>
+            <td>Cost Structure</td>
+            <td>Upfront development costs but potential long-term cost savings due to tailored features.</td>
+            <td>Lower upfront costs but may have hidden fees or ongoing subscription costs.</td>
+          </tr>
+          <tr>
+            <td>Time-to-Market</td>
+            <td>Longer development time but faster deployment of features that align with business needs.</td>
+            <td>Quick deployment, but may require compromises on specific business requirements.</td>
+          </tr>
+          <tr>
+            <td>Support and Maintenance</td>
+            <td>Customized support and maintenance plans to address specific needs.</td>
+            <td>Generalized support with limited flexibility to address specific concerns.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+ </div>
   @include('frontend.layouts.form')
+ 

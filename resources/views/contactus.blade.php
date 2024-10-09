@@ -3,7 +3,7 @@
 
 <div class="relative">
     <div
-        class="h-96 relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+        class="md:h-96 h-72 *:size-full relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
         <img  src="{{ asset('assets/img/contactus.jpg') }}" alt="">
     </div>
     <div
@@ -124,7 +124,7 @@
                 
                                 <div class="sm:col-span-2">
                                     <button type="submit" id="submitForm"
-                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-theme1/80 focus:bg-theme1/80">
+                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-yellow-500 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500/80 focus:bg-yellow-500/80">
                                         Send
                                     </button>
                                 </div>
