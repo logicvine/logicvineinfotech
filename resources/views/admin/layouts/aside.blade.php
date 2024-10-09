@@ -3,7 +3,7 @@
     @click.outside="sidebarToggle = false">
     <!-- SIDEBAR HEADER -->
     <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <a href="{{ route('admin.index') }}">
+        <a href="{{ route('dashboard') }}">
             <img class="3xl:h-16 2xl:h-12 h-10 block group-[]/nav:hidden" src="{{asset('/assets/img/logo-white.png')}}"
               alt="logo" />
             <img class="3xl:h-16 2xl:h-12 h-10 hidden group-[]/nav:block" src="{{ asset('/assets/img/logo.png') }}" alt="logo" />
@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('create.blog')  }}">
+                        <a href="{{route('submit.blog')  }}">
                              Create Blog
                         </a>
 

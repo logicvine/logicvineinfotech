@@ -71,58 +71,60 @@
                 <div class="mt-6 overflow-hidden bg-white rounded-xl">
                     <div class="px-6 py-12 sm:p-12">
                         <h3 class="text-3xl font-semibold text-center text-theme1">Send us a message</h3>
-
-                        <form action="{{ route('submit.contactus') }}" method="POST" class="mt-14">
+                        <div id="successMessage" class="alert alert-success hidden text-green-600"></div>
+                
+                        <form id="contactForm" action="{{ route('submit.contactus') }}" method="POST" class="mt-14">
                             @csrf
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Your name </label>
+                                    <label for="name" class="text-base font-medium text-theme1">Your name</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="text" name="name" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="text" name="name" id="name" placeholder="Enter your full name"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
+                                    <div id="nameError" class="alert text-red-600"></div>
                                 </div>
-
+                
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Email address </label>
+                                    <label for="email" class="text-base font-medium text-theme1">Email address</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="email" name="email" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="email" name="email" id="email" placeholder="Enter your email"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
+                                    <div id="emailError" class="alert text-red-600"></div>
                                 </div>
-
+                
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Phone number </label>
+                                    <label for="phone" class="text-base font-medium text-theme1">Phone number</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="tel" name="phone" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
+                                    <div id="phoneError" class="alert text-red-600"></div>
                                 </div>
-
+                
                                 <div>
-                                    <label for="" class="text-base font-medium text-theme1"> Company name </label>
+                                    <label for="cmpname" class="text-base font-medium text-theme1">Company name</label>
                                     <div class="mt-2.5 relative">
-                                        <input type="text" name="cmpname" id=""
-                                            placeholder="Enter your full name"
+                                        <input type="text" name="cmpname" id="cmpname" placeholder="Enter your company name"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md focus:outline-none focus:border-theme1 caret-theme1" />
                                     </div>
+                                    <div id="cmpnameError" class="alert text-red-600"></div>
                                 </div>
-
+                
                                 <div class="sm:col-span-2">
-                                    <label for="" class="text-base font-medium text-theme1"> Message </label>
+                                    <label for="message" class="text-base font-medium text-theme1">Message</label>
                                     <div class="mt-2.5 relative">
-                                        <textarea name="message" id="" placeholder="Type your msg"
+                                        <textarea name="message" id="message" placeholder="Type your message"
                                             class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border-[2px] border-gray-200 rounded-md resize-y focus:outline-none focus:border-theme1 caret-theme1"
                                             rows="4"></textarea>
                                     </div>
+                                    <div id="messageError" class="alert text-red-600"></div>
                                 </div>
-
+                
                                 <div class="sm:col-span-2">
-                                    <button type="submit"
-                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-yellow-500 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500/80 focus:bg-theme1/80">
+                                    <button type="submit" id="submitForm"
+                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-theme1/80 focus:bg-theme1/80">
                                         Send
                                     </button>
                                 </div>
@@ -130,6 +132,61 @@
                         </form>
                     </div>
                 </div>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#contactForm').on('submit', function(e) {
+                            e.preventDefault();
+                            $('#nameError').text('');
+                            $('#emailError').text('');
+                            $('#phoneError').text('');
+                            $('#cmpnameError').text('');
+                            $('#messageError').text('');
+                            $('#successMessage').addClass('hidden').text('');
+                
+                            var formData = {
+                                name: $('#name').val(),
+                                email: $('#email').val(),
+                                phone: $('#phone').val(),
+                                cmpname: $('#cmpname').val(),
+                                message: $('#message').val(),
+                                _token: $('input[name="_token"]').val()
+                            };
+                
+                            $.ajax({
+                                url: "{{ route('submit.contactus') }}",
+                                method: 'POST',
+                                data: formData,
+                                success: function(response) {
+                                    if(response.success) {
+                                        $('#contactForm')[0].reset();
+                                        $('#successMessage').removeClass('hidden').text(response.message);
+                                    }
+                                },
+                                error: function(response) {
+                                    var errors = response.responseJSON.errors;
+                                    
+                                    if (errors.name) {
+                                        $('#nameError').text(errors.name[0]);
+                                    }
+                                    if (errors.email) {
+                                        $('#emailError').text(errors.email[0]);
+                                    }
+                                    if (errors.phone) {
+                                        $('#phoneError').text(errors.phone[0]);
+                                    }
+                                    if (errors.cmpname) {
+                                        $('#cmpnameError').text(errors.cmpname[0]);
+                                    }
+                                    if (errors.message) {
+                                        $('#messageError').text(errors.message[0]);
+                                    }
+                                }
+                            });
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
