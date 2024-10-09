@@ -59,9 +59,9 @@
                         company in 2024</label>
                     </label>
                   </p>
-                  <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+                  <a href="{{ route('web.contactus') }}" class="flex item-start justify-center w-full ms-auto">
                     <div 
-                      class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+                      class="rounded-lg mx-auto px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
                       <span
                         class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                       <span 
@@ -85,52 +85,50 @@
 
   <!-- about section -->
   <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid items-center grid-cols-1 overflow-hidden gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
-        <div class="relative mb-12">
-          <img class="w-full rounded-md z-10" src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -top-32 left-0 rotate-45"></div>
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl overflow-hidden py-10">
+          <div class="grid items-center grid-cols-1  gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24 ">
+            <div class="relative mb-12">
+              <img class="w-full rounded-md z-10 " src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
+              <img class="w-full rounded-md z-10 absolute inset-0 size-full scale-y-[127%] scale-x-[120%] drop-shadow-xl" src="{{ asset('assets/img/mainmask1.png') }}" alt=""  />
+            
 
-
-        </div>
-
-        <div>
-          <div class="flex gap-4 items-center">
-            <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
-             <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
-              <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-             </div>
             </div>
-            <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
-          </div>
-        
-<h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-  <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
-  </span> Digital Solutions.</h1>
-<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
 
-          <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
-            tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
-            we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
-          </p>
-          <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
-            <div 
-              class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
-              <span
-                class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-              <span 
-                class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
-                Coffee With Us</span>
-          </a>
+            <div>
+              <div class="flex gap-4 items-center">
+                <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
+                <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
+                  <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                </div>
+                </div>
+                <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
+              </div>
+            
+        <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+      <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
+      </span> Digital Solutions.</h1>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+
+              <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
+                tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
+                we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
+              </p>
+              <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+                <div 
+                  class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+                  <span
+                    class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                  <span 
+                    class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+                    Coffee With Us</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
   </section>
   <!-- about section end -->
 
@@ -744,8 +742,8 @@
  
   <section class="relative z-10 overflow-hidden bg-theme1 py-8 sm:py-14 lg:py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
-      <div class="-mx-4 flex flex-wrap items-center">
-        <div class="w-full px-4 lg:w-1/2">
+      <div class="-mx-4 flex flex-wrap items-center justify-between">
+        <div class="w-full flex  px-4 lg:w-1/2">
           <div class="text-center lg:text-left ">
             <div class="mb-10 lg:mb-0 ">
               <h1
@@ -758,7 +756,7 @@
           </div>
         </div>
         <div class="w-full px-4 lg:w-1/2">
-          <div class="text-center lg:text-right">
+          <div class="flex justify-center lg:justify-end">
 
             <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
               <div 
@@ -827,7 +825,7 @@
   <!-- blog -->
   <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="flex items-end justify-between">
+      <div class="flex flex-wrap items-end justify-between">
         <div class="flex-1 text-center mb-10">
           <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
             <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">
@@ -842,9 +840,9 @@
           </p>
         </div>
 
-        <div class="flex">
+        <div class="flex max-sm:w-full max-sm:justify-end">
           <button type="button"
-            class="flex items-center top-0 swiper-button-next relative z-40 justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-theme1 hover:text-white focus:bg-theme1 focus:text-white after:opacity-0 after:absolute">
+            class="flex items-center top-0 swiper-button-next relative z-40 justify-center text-yellow-500 transition-all duration-200 bg-transparent border border-yellow-500 rounded w-9 h-9 hover:bg-yellow-500 hover:text-white focus:bg-yellow-500 focus:text-white after:opacity-0 after:absolute">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -852,7 +850,7 @@
           </button>
 
           <button type="button"
-            class="flex items-center  swiper-button-prev relative z-40  justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-theme1 hover:text-white focus:bg-theme1 focus:text-white after:opacity-0 after:absolute">
+            class="flex items-center  swiper-button-prev relative z-40  justify-center text-yellow-500 transition-all duration-200 bg-transparent border border-yellow-500 rounded w-9 h-9 hover:bg-yellow-500 hover:text-white focus:bg-yellow-500 focus:text-white after:opacity-0 after:absolute">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

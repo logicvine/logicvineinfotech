@@ -4,40 +4,18 @@
 <!-- header end  -->
 
   <!-- hero -->
-  <section>
-    <div class="md:h-dvh relative h-auto bg-no-repeat bg-right max-md:!bg-none ">
-      <div class="absolute size-full inset-0 -z-50">
-        <img src="{{ asset('/assets/img/team2.jpg') }}" class="size-full object-cover" alt="">
-      </div>
-      <div class="container px-3 h-full mx-auto grid md:grid-cols-2 grid-cols-1">
-        <div
-          class="bg-theme1 order-2 md:order-1  flex-col flex h-full justify-center md:shadow-[-300px_0px_0px_0px_#120B37]">
-          <div class="text-white px-2 text-lg font-semibold">
-            Newest Blog
-          </div>
-          <div class="text-white px-2 capitalize xxl:text-7xl xl:text-6xl lg:text-3xl md:text-2xl sm:text-3xl text-3xl">
-            Empowering Digital Transformation
-
-          </div>
-          <div class="text-slate-400 px-2 pe-5 pt-2 text-base">
-            "Unlocking Creativity, Empowering Perspectives: Your Premier Source for Thoughtful Insights and
-            Inspiration!"
-          </div>
-          <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
-            <div 
-              class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
-              <span
-                class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-              <span 
-                class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
-                Coffee With Us</span>
-          </a>
-        </div>
-
-      </div>
+  <div class="relative">
+    <div class="md:h-96 h-72 *:size-full relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+        <img src="{{ asset('assets/img/team.jpg') }}" alt="">
     </div>
+    <div class="absolute top-1/2 -translate-y-1/2 flex items-center px-8 sm:px-12 md:px-16 h-full text-white mx-auto w-full">
+        <div class="w-full">
+            <div class="text-6xl md:text-[100px] font-bold !leading-[130%] text-center uppercase">
+                About</div>
 
-  </section>
+        </div>
+    </div>
+</div>
   <!-- hero -->
 
   <section class="py-10 bg-gray-100 sm:py-16 ">
@@ -86,7 +64,7 @@
       <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-gray-100 from-yellow-400">
         Integrity at 
       </span> Our Core.</h1>
-    <div class="max-w-7xl grid grid-cols-3 gap-4 items-stretch *:h-full *:*:h-full">
+    <div class="max-w-7xl grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch *:h-full *:*:h-full">
       <div class="relative flex flex-col justify-center overflow-hidden py-4 ">
         <div
           class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
@@ -176,35 +154,33 @@
 
   <!-- about section -->
   <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid items-center grid-cols-1 overflow-hidden gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl overflow-hidden py-10">
+      <div class="grid items-center grid-cols-1  gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24 ">
         <div class="relative mb-12">
-          <img class="w-full rounded-md z-10" src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -top-32 left-0 rotate-45"></div>
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-
+          <img class="w-full rounded-md z-10 " src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
+          <img class="w-full rounded-md z-10 absolute inset-0 size-full scale-y-[127%] scale-x-[120%] drop-shadow-xl" src="{{ asset('assets/img/mainmask1.png') }}" alt=""  />
+        
 
         </div>
 
         <div>
           <div class="flex gap-4 items-center">
             <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
-             <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
+            <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
               <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                 d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-             </div>
+            </div>
             </div>
             <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
           </div>
         
-   <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-     <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
-        </span> Digital Solutions.</h1>
-     <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+  <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
+  </span> Digital Solutions.</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
 
           <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
             tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
@@ -218,12 +194,12 @@
               <span 
                 class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
                 Coffee With Us</span>
-            </div>
           </a>
         </div>
       </div>
     </div>
-  </section>
+</section>
+<!-- about section end -->
 
     <!-- cta -->
  
@@ -243,7 +219,7 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <div class="text-center lg:text-right">
+            <div class="text-center flex lg:justify-end">
   
               <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
                 <div 

@@ -28,3 +28,19 @@ Route::group(['prefix' => 'my-admin', 'middleware' => 'guest'], function () {
     Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
     Route::post('post-login', [AuthController::class, 'login'])->name('login.save');
 });
+
+
+Route::get('/Web-Development-company', function () {
+    return view('service.webdevelopment');  // Referencing blog inside the service folder
+});
+Route::get('/mobileapp-Development-company', function () {
+    return view('service.mobileappdevelopment');  // Referencing blog inside the service folder
+});
+
+Route::get('/eCommerceapp-Development-company', function () {
+    return view('service.ecommercedevelopment');  // Referencing blog inside the service folder
+});
+
+Route::get('/software-Development-company', function () {
+    return view('service.software development');  // Referencing blog inside the service folder
+});
