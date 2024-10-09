@@ -124,7 +124,7 @@
                 
                                 <div class="sm:col-span-2">
                                     <button type="submit" id="submitForm"
-                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-theme1/80 focus:bg-theme1/80">
+                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-yellow-500 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500/80 focus:bg-yellow-500/80">
                                         Send
                                     </button>
                                 </div>
