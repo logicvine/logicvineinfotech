@@ -84,14 +84,12 @@
 
   <!-- about section -->
   <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid items-center grid-cols-1 overflow-hidden gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl overflow-hidden py-10">
+      <div class="grid items-center grid-cols-1  gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24 ">
         <div class="relative mb-12">
-          <img class="w-full rounded-md z-10" src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -top-32 left-0 rotate-45"></div>
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-          <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-
+          <img class="w-full rounded-md z-10 " src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
+          <img class="w-full rounded-md z-10 absolute inset-0 size-full scale-y-[127%] scale-x-[120%] drop-shadow-xl" src="{{ asset('assets/img/mainmask1.png') }}" alt=""  />
+         
 
         </div>
 
@@ -825,7 +823,7 @@
   <!-- blog -->
   <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="flex items-end justify-between">
+      <div class="flex flex-wrap items-end justify-between">
         <div class="flex-1 text-center mb-10">
           <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
             <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">
@@ -840,9 +838,9 @@
           </p>
         </div>
 
-        <div class="flex">
+        <div class="flex max-sm:w-full max-sm:justify-end">
           <button type="button"
-            class="flex items-center top-0 swiper-button-next relative z-40 justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-theme1 hover:text-white focus:bg-theme1 focus:text-white after:opacity-0 after:absolute">
+            class="flex items-center top-0 swiper-button-next relative z-40 justify-center text-yellow-500 transition-all duration-200 bg-transparent border border-yellow-500 rounded w-9 h-9 hover:bg-yellow-500 hover:text-white focus:bg-yellow-500 focus:text-white after:opacity-0 after:absolute">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -850,7 +848,7 @@
           </button>
 
           <button type="button"
-            class="flex items-center  swiper-button-prev relative z-40  justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-theme1 hover:text-white focus:bg-theme1 focus:text-white after:opacity-0 after:absolute">
+            class="flex items-center  swiper-button-prev relative z-40  justify-center text-yellow-500 transition-all duration-200 bg-transparent border border-yellow-500 rounded w-9 h-9 hover:bg-yellow-500 hover:text-white focus:bg-yellow-500 focus:text-white after:opacity-0 after:absolute">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

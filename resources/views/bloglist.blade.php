@@ -47,8 +47,6 @@
                         articles
                         on mobile app development, eCommerce strategies, innovative software solutions, and industry best
                         practices.
-                        Stay updated with our expert analysis and thought leadership to help you navigate the digital
-                        landscape and
                         empower your business.
 
                     </p>
