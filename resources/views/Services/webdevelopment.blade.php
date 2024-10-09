@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <link rel="stylesheet" href="./../src/output.css">
-  <title>Document</title>
-</head>
-
-<body>
-
+@extends('frontend.layouts.master')
+@section('content')
   <!-- header start  -->
 
   <div class=>
@@ -20,7 +8,7 @@
       <div class="max-2xl:max-w-7xl 2xl:px-24 3xl:px-36  mx-auto lg:pb-3 group-[]/nav:py-3 py-3 px-6 lg:px-8 z-50">
         <div class="flex items-center justify-between relative">
           <a href="./../index.html">
-            <img class="3xl:h-16 2xl:h-12 h-10 block group-[]/nav:hidden" src="./../assets/img/logo-white.png"
+            <img class="3xl:h-16 2xl:h-12 h-10 block group-[]/nav:hidden" src="{{ asset('assets/img/logo-white.png') }}"
               alt="logo" />
             <img class="3xl:h-16 2xl:h-12 h-10 hidden group-[]/nav:block" src="./../assets/img/logo.png" alt="logo" />
           </a>
@@ -965,7 +953,4 @@
       }
     });
   </script>
-
-</body>
-
-</html>
+@endsection

@@ -858,10 +858,14 @@
           </button>
         </div>
       </div>
+      @include('bloglistabout&home')
 
-      <div class="max-w-7xl mx-auto newsSwiper swiper mt-4">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+
+
+        {{-- blog --}}
+      {{-- <div class="max-w-7xl mx-auto newsSwiper swiper mt-4">
+        <div class="swiper-wrapper"> --}}
+          {{-- <div class="swiper-slide">
             <div class="overflow-hidden bg-white rounded shadow">
               <div class="p-5">
                 <div class="relative">
@@ -895,7 +899,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> --}}
           {{-- <div class="swiper-slide">
             <div class="overflow-hidden bg-white rounded shadow">
               <div class="p-5">
@@ -1074,10 +1078,10 @@
             </div>
           </div> --}}
 
-        </div>
+        {{-- </div> --}}
 
 
-      </div>
+      {{-- </div> --}}
 
     </div>
   </section>
