@@ -59,9 +59,9 @@
                         company in 2024</label>
                     </label>
                   </p>
-                  <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+                  <a href="{{ route('web.contactus') }}" class="flex item-start justify-center w-full ms-auto">
                     <div 
-                      class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+                      class="rounded-lg mx-auto px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
                       <span
                         class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                       <span 
@@ -742,8 +742,8 @@
  
   <section class="relative z-10 overflow-hidden bg-theme1 py-8 sm:py-14 lg:py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
-      <div class="-mx-4 flex flex-wrap items-center">
-        <div class="w-full px-4 lg:w-1/2">
+      <div class="-mx-4 flex flex-wrap items-center justify-between">
+        <div class="w-full flex  px-4 lg:w-1/2">
           <div class="text-center lg:text-left ">
             <div class="mb-10 lg:mb-0 ">
               <h1
@@ -756,7 +756,7 @@
           </div>
         </div>
         <div class="w-full px-4 lg:w-1/2">
-          <div class="text-center lg:text-right">
+          <div class="flex justify-center lg:justify-end">
 
             <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
               <div 

@@ -55,10 +55,10 @@
             </div>
 
             <div class="max-w-7xl mx-auto  mt-4">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     @forelse ($data as $item)
-                    <div class="swiper-slide">
-                      <div class="overflow-hidden bg-white rounded shadow">
+                    <div class="">
+                      <div class="overflow-hidden bg-white rounded shadow h-full">
                           <div class="p-5">
                               <div class="relative">
                                   <a href="#" title="" class="block aspect-w-4 aspect-h-3">
@@ -98,7 +98,7 @@
                   </div>
                     @empty
                     @endforelse
-                    <div class="swiper-slide">
+                    <div class="">
                         <div class="overflow-hidden bg-white rounded shadow">
                             {{-- <div class="p-5">
                                 <div class="relative">
@@ -139,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="">
                         <div class="overflow-hidden bg-white rounded shadow">
                             {{-- <div class="p-5">
                                 <div class="relative">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="">
                         <div class="overflow-hidden bg-white rounded shadow">
                             {{-- <div class="p-5">
                                 <div class="relative">
@@ -220,7 +220,7 @@
                             </div> --}}
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="">
                         <div class="overflow-hidden bg-white rounded shadow">
                             {{-- <div class="p-5">
                                 <div class="relative">
@@ -261,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="">
                         <div class="overflow-hidden bg-white rounded shadow">
                             {{-- <div class="p-5">
                                 <div class="relative">
