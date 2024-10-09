@@ -49,11 +49,6 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
         </li>
       </ul>
       <div class="flex items-center gap-4">
-
-
-
-
-
         <div class="flex lg:hidden flex-col gap-y-3 cursor-pointer">
           <label for="mmCompany" class="flex items-center gap-x-[2px] cursor-pointer">
             <div class="flex items-center text-white group-[]/nav:text-black text-sm gap-1">
