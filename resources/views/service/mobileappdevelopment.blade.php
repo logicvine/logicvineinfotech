@@ -51,55 +51,54 @@
   </section>
   {{-- <!-- hero section end  --> --}}
 
-    {{-- <!-- about section --> --}}
-    <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
-      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="grid items-center grid-cols-1 overflow-hidden gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
-          <div class="relative mb-12">
-            <img class="w-full rounded-md z-10" src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
-            <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -top-32 left-0 rotate-45"></div>
-            <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-            <div class=" bg-gray-100 w-60 h-28 rounded-2xl absolute -bottom-32 right-0 rotate-45"></div>
-  
-  
-          </div>
-  
-          <div>
-            <div class="flex gap-4 items-center">
-              <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
-               <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
-                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-               </div>
-              </div>
-              <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
+  <!-- about section -->
+  <section class="bg-gray-100 py-8 sm:py-14 lg:py-16">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl overflow-hidden py-10">
+      <div class="grid items-center grid-cols-1  gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24 ">
+        <div class="relative mb-12">
+          <img class="w-full rounded-md z-10 " src="{{ asset('assets/img/aboutimg.jpg') }}" alt=""  />
+          <img class="w-full rounded-md z-10 absolute inset-0 size-full scale-y-[127%] scale-x-[120%] drop-shadow-xl" src="{{ asset('assets/img/mainmask1.png') }}" alt=""  />
+        
+
+        </div>
+
+        <div>
+          <div class="flex gap-4 items-center">
+            <div class="flex items-center justify-center size-14 bg-yellow-500/50 rounded-full">
+            <div class="size-10 rounded-full bg-yellow-500 flex justify-center items-center">
+              <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
             </div>
-          
-     <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-       <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
-          </span> Digital Solutions.</h1>
-       <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-  
-            <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
-              tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
-              we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
-            </p>
-            <button
-              class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500 mt-4  w-max">
+            </div>
+            <div class="font-semibold text-lg text-yellow-500">LogicVine Infotech</div>
+          </div>
+        
+    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+  <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Leading the Way in 
+  </span> Digital Solutions.</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+
+          <p class="mt-6 text-lg leading-relaxed text-gray-600">At Logic Vine, we believe that technology is not just a
+            tool but a catalyst for transformation. Founded on the principles of innovation, integrity, and excellence,
+            we are dedicated to empowering businesses with tailored IT solutions that drive success and efficiency. .
+          </p>
+          <a href="{{ route('web.contactus') }}" class="flex item-start justify-start">
+            <div 
+              class="rounded-lg px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
               <span
                 class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-              <span
+              <span 
                 class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
                 Coffee With Us</span>
-            </button>
-          </div>
+          </a>
         </div>
       </div>
-    </section>
-    {{-- about end --}}
+    </div>
+</section>
+<!-- about section end -->
 
      <!-- cta -->
  
@@ -119,7 +118,7 @@
           </div>
         </div>
         <div class="w-full px-4 lg:w-1/2">
-          <div class="text-center lg:text-right">
+          <div class="justify-center flex lg:justify-end">
 
             <button
               class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-yellow-500  w-max">
