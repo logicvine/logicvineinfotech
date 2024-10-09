@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\DB;
 class WebController extends Controller
 {
  public function index(){
-    return view('index');
+   $data = DB::table('blogs')->get();
+    return view('index' ,compact('data'));
    }
    public function about(){
     return view('about');

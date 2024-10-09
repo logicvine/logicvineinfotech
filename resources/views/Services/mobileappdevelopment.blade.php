@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+@extends('frontend.layouts.master')
+@section('content')
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +12,7 @@
   <title>Document</title>
 </head>
 
-<body>
+<body> --}}
 
   <!-- header start  -->
 
@@ -935,7 +937,4 @@
       }
     });
   </script>
-
-</body>
-
-</html>
+@endsection

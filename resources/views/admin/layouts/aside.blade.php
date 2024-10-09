@@ -35,12 +35,6 @@
                             blog
                         </a>
                     </li>
-                    <li>
-                        <a href="{{route('submit.blog')  }}">
-                             Create Blog
-                        </a>
-
-                    </li>
                 </ul>
             </div>
         </nav>
