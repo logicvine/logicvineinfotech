@@ -76,7 +76,7 @@
                                   <a href="#" title="" class="text-black">{{ $item->heading ??' Ho7 Tips to run your remote team
                                       faster and better.' }}</a>
                               </p>
-                              <p class="mt-4 text-base text-gray-600">{{$item->description ?? 'Amet minim mollit non deserunt ullamco est sit
+                              <p class="mt-4 text-base text-gray-600 line-clamp-3">{{$item->description ?? 'Amet minim mollit non deserunt ullamco est sit
                                   aliqua dolor do
                                   amet
                                   sint. Velit officia consequat duis enim velit mollit.'}}</p>

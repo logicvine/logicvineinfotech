@@ -25,7 +25,8 @@ class adminController extends Controller
     }
     public function contactus()
     {
-        return view('admin.contact.view');
+        $data = DB::table('contact_us')->get();
+        return view('admin.contact.view',compact('data'));
     }
     public function submitcontactus(Request $request)
     {

@@ -71,8 +71,7 @@
                 <div class="mt-6 overflow-hidden bg-white rounded-xl">
                     <div class="px-6 py-12 sm:p-12">
                         <h3 class="text-3xl font-semibold text-center text-theme1">Send us a message</h3>
-                        <div id="successMessage" class="alert alert-success hidden text-green-600"></div>
-                
+                        <div id="successMessage" class="alert alert-success hidden text-green-600"></div>  
                         <form id="contactForm" action="{{ route('submit.contactus') }}" method="POST" class="mt-14">
                             @csrf
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
@@ -144,7 +143,7 @@
                             $('#cmpnameError').text('');
                             $('#messageError').text('');
                             $('#successMessage').addClass('hidden').text('');
-                
+                            $('#submitForm').text('Loading...').prop('disabled', true);
                             var formData = {
                                 name: $('#name').val(),
                                 email: $('#email').val(),
@@ -153,18 +152,20 @@
                                 message: $('#message').val(),
                                 _token: $('input[name="_token"]').val()
                             };
-                
+                            $('#loader').removeClass('hidden');
                             $.ajax({
                                 url: "{{ route('submit.contactus') }}",
                                 method: 'POST',
                                 data: formData,
                                 success: function(response) {
+                                    $('#loader').addClass('hidden');
                                     if(response.success) {
                                         $('#contactForm')[0].reset();
                                         $('#successMessage').removeClass('hidden').text(response.message);
                                     }
                                 },
                                 error: function(response) {
+                                    $('#submitForm').text('Send').prop('disabled', false);
                                     var errors = response.responseJSON.errors;
                                     
                                     if (errors.name) {

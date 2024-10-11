@@ -30,23 +30,14 @@ Route::any('service/mobileappdevelopment', [ContactUsController::class, 'mobilea
 Route::any('service/softwaredevelopment', [ContactUsController::class, 'softwaredevelopment'])->name('service.softwaredevelopment');
 Route::any('service/ecommerce', [ContactUsController::class, 'ecommerce'])->name('service.ecommerce');
 
+Route::post('/blog/update/{id}', [BlogController::class, 'update'])->name('admin.blog.update');
+Route::delete('/blog/delete/{id}', [BlogController::class, 'destroy'])->name('admin.blog.delete');
+Route::get('/blog/edit/{id}', [BlogController::class, 'edit'])->name('admin.blog.edit');
+
+
+
 Route::group(['prefix' => 'my-admin', 'middleware' => 'guest'], function () {
     Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
     Route::post('post-login', [AuthController::class, 'login'])->name('login.save');
 });
 
-
-Route::get('/Web-Development-company', function () {
-    return view('service.webdevelopment');  // Referencing blog inside the service folder
-});
-Route::get('/mobileapp-Development-company', function () {
-    return view('service.mobileappdevelopment');  // Referencing blog inside the service folder
-});
-
-Route::get('/eCommerceapp-Development-company', function () {
-    return view('service.ecommercedevelopment');  // Referencing blog inside the service folder
-});
-
-Route::get('/software-Development-company', function () {
-    return view('service.software development');  // Referencing blog inside the service folder
-});
