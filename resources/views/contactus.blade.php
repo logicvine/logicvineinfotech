@@ -3,7 +3,7 @@
 
 <div class="relative">
     <div
-        class="h-96 relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+        class="md:h-96 h-72 *:size-full relative  overflow-hidden *:object-cover *:object-bottom after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
         <img  src="{{ asset('assets/img/contactus.jpg') }}" alt="">
     </div>
     <div
@@ -71,8 +71,7 @@
                 <div class="mt-6 overflow-hidden bg-white rounded-xl">
                     <div class="px-6 py-12 sm:p-12">
                         <h3 class="text-3xl font-semibold text-center text-theme1">Send us a message</h3>
-                        <div id="successMessage" class="alert alert-success hidden text-green-600"></div>
-                
+                        <div id="successMessage" class="alert alert-success hidden text-green-600"></div>  
                         <form id="contactForm" action="{{ route('submit.contactus') }}" method="POST" class="mt-14">
                             @csrf
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
@@ -124,7 +123,7 @@
                 
                                 <div class="sm:col-span-2">
                                     <button type="submit" id="submitForm"
-                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-theme1 border border-transparent rounded-md focus:outline-none hover:bg-theme1/80 focus:bg-theme1/80">
+                                        class="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-yellow-500 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500/80 focus:bg-yellow-500/80">
                                         Send
                                     </button>
                                 </div>
@@ -144,7 +143,7 @@
                             $('#cmpnameError').text('');
                             $('#messageError').text('');
                             $('#successMessage').addClass('hidden').text('');
-                
+                            $('#submitForm').text('Loading...').prop('disabled', true);
                             var formData = {
                                 name: $('#name').val(),
                                 email: $('#email').val(),
@@ -153,18 +152,20 @@
                                 message: $('#message').val(),
                                 _token: $('input[name="_token"]').val()
                             };
-                
+                            $('#loader').removeClass('hidden');
                             $.ajax({
                                 url: "{{ route('submit.contactus') }}",
                                 method: 'POST',
                                 data: formData,
                                 success: function(response) {
+                                    $('#loader').addClass('hidden');
                                     if(response.success) {
                                         $('#contactForm')[0].reset();
                                         $('#successMessage').removeClass('hidden').text(response.message);
                                     }
                                 },
                                 error: function(response) {
+                                    $('#submitForm').text('Send').prop('disabled', false);
                                     var errors = response.responseJSON.errors;
                                     
                                     if (errors.name) {

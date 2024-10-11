@@ -33,14 +33,14 @@
                                 <h5 class="text-sm font-medium uppercase xsm:text-base">description</h5>
                             </div>
                             <div class="hidden p-2.5 text-center sm:block xl:p-5">
-                                <h5 class="text-sm font-medium uppercase xsm:text-base">date</h5>
+                                <h5 class="text-sm font-medium uppercase xsm:text-base">Action</h5>
                             </div>
                         </div>
-                        {{-- @forelse ($data as $item) --}}
+                        @forelse ($data as $item)
                         <div class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5">
                             <div class="flex items-center gap-3 p-2.5 xl:p-5">
-                                <div class="flex-shrink-0">
-                                    <img src="src/images/brand/brand-01.svg" alt="Brand" />
+                                <div class="flex-shrink-0 h-20 w-20">
+                                    <img src="{{ asset('gallery').'/'.$item->image }}" alt="Brand" />
                                 </div>
                                 <p class="hidden font-medium text-black dark:text-white sm:block">
                                   
@@ -48,22 +48,36 @@
                             </div>
 
                             <div class="flex items-center justify-center p-2.5 xl:p-5">
-                                <p class="font-medium text-black dark:text-white"></p>
+                                <p class="font-medium text-black dark:text-white">
+                                    {{ $item->cataegory }}
+                                </p>
                             </div>
-
+                            
                             <div class="flex items-center justify-center p-2.5 xl:p-5">
-                                <p class="font-medium text-meta-3"></p>
-                            </div>
+                                <p class="font-medium text-meta-3">
 
-                            <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-                                <p class="font-medium text-black dark:text-white"></p>
+                                    {{ $item->heading }}
+                                </p>
                             </div>
-
+                            
                             <div class="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-                                <p class="font-medium text-meta-5"></p>
+                                <p class="font-medium text-black dark:text-white line-clamp-3"> {{ $item->description }}</p>
+                            </div>
+                            <div class="flex items-center justify-center p-2.5 xl:p-5">
+                                <a href="{{ route('admin.blog.edit', $item->id) }}" class="px-4 py-2 text-white bg-blue-500 rounded">Edit</a>
+                                <form action="{{ route('admin.blog.delete', $item->id) }}" method="POST" class="ml-2">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="px-4 py-2 text-black bg-red-500 rounded"
+                                        onclick="return confirm('Are you sure you want to delete this blog?');">
+                                        Delete
+                                    </button>
+                                </form>
                             </div>
                         </div>
-                        {{-- @endforelse --}}
+                        @empty
+                        <p>No blogs found</p>
+                        @endforelse
                     </div>
                 </div>
             </div>

@@ -126,7 +126,7 @@
                         $('#cmpnameError').text('');
                         $('#messageError').text('');
                         $('#successMessage').addClass('hidden').text('');
-            
+                        $('#submitForm').text('Loading...').prop('disabled', true);
                         var formData = {
                             name: $('#name').val(),
                             email: $('#email').val(),
@@ -135,18 +135,20 @@
                             message: $('#message').val(),
                             _token: $('input[name="_token"]').val()
                         };
-            
+                        $('#loader').removeClass('hidden');
                         $.ajax({
                             url: "{{ route('submit.contactus') }}",
                             method: 'POST',
                             data: formData,
                             success: function(response) {
+                                $('#loader').addClass('hidden');
                                 if(response.success) {
                                     $('#contactForm')[0].reset();
                                     $('#successMessage').removeClass('hidden').text(response.message);
                                 }
                             },
                             error: function(response) {
+                                $('#submitForm').text('Send').prop('disabled', false);
                                 var errors = response.responseJSON.errors;
                                 
                                 if (errors.name) {

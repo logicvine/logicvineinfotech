@@ -33,15 +33,13 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
           <div
             class="absolute invisible trans opacity-0 group-hover:visible group-hover:opacity-100 text-left w-max bg-gray-100 rounded-md py-4 -bottom-44 left-1/2 -translate-x-1/2 after:absolute after:size-full after:-top-4 after:-z-10 after:bg-transparent">
             <ul class="*:py-1 *:px-4 *:text-base *:font-medium ">
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/webdevelopment.html">Web
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.webdevelopment') }}">Web
                   Development</a></li>
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/mobileappdevelopment.html">Mobile
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.mobileappdevelopment') }}">Mobile
                   App Development</a></li>
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/softwaredevelopment.html">Software
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.softwaredevelopment') }}">Software
                   Development</a></li>
-              <li class="hover:bg-yellow-500 hover:text-white"><a href="./Services/ecommerce.html">eCommerce
-                  Development</a></li>
-
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.ecommerce') }}">eCommerce </a></li>
             </ul>
           </div>
 
@@ -70,11 +68,6 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
         </li>
       </ul>
       <div class="flex items-center gap-4">
-
-
-
-
-
         <div class="flex lg:hidden flex-col gap-y-3 cursor-pointer">
           <label for="mmCompany" class="flex items-center gap-x-[2px] cursor-pointer">
             <div class="flex items-center text-white group-[]/nav:text-black text-sm gap-1">
@@ -152,7 +145,7 @@ class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y
 
                   <div>
                     <div class="flex-auto">
-                      <a href="./Services/webdevelopment.html" class="block font-semibold opacity-80">
+                      <a href="{{ route('service.webdevelopment') }}" class="block font-semibold opacity-80">
                         Web Development
                         <span class="absolute inset-0 z-[1]"></span>
                       </a>
@@ -160,7 +153,7 @@ class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y
                   </div>
                   <div>
                     <div class="flex-auto">
-                      <a href="./Services/mobileappdevelopment.html" class="block font-semibold opacity-80">
+                      <a href="{{ route('service.mobileappdevelopment') }}" class="block font-semibold opacity-80">
                         Mobile App Development
                         <span class="absolute inset-0 z-[1]"></span>
                       </a>
@@ -169,7 +162,7 @@ class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y
 
                   <div>
                     <div class="flex-auto">
-                      <a href="./Services/softwaredevelopment.html" class="block font-semibold opacity-80">
+                      <a href="{{ route('service.softwaredevelopment') }}" class="block font-semibold opacity-80">
                         Software Development
                         <span class="absolute inset-0 z-[1]"></span>
                       </a>
@@ -178,7 +171,7 @@ class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y
 
                   <div>
                     <div class="flex-auto">
-                      <a href="./Services/ecommerce.html" class="block font-semibold opacity-80">
+                      <a href="{{ route('service.ecommerce') }}" class="block font-semibold opacity-80">
                         eCommerce Development
                         <span class="absolute inset-0 z-[1]"></span>
                       </a>

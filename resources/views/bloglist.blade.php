@@ -3,7 +3,7 @@
     <!-- header end  -->
     <div class="relative">
         <div
-            class="h-96 relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
+            class="md:h-96 h-72 *:size-full relative  overflow-hidden *:object-cover after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-slate-900/20 via-slate-900/30 to-slate-900">
             <img  src="{{ asset('assets/img/blog.jpg') }}" alt="">
         </div>
         <div
@@ -47,20 +47,15 @@
                         articles
                         on mobile app development, eCommerce strategies, innovative software solutions, and industry best
                         practices.
-                        Stay updated with our expert analysis and thought leadership to help you navigate the digital
-                        landscape and
                         empower your business.
-
                     </p>
                 </div>
-
             </div>
-
             <div class="max-w-7xl mx-auto  mt-4">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     @forelse ($data as $item)
-                    <div class="swiper-slide">
-                      <div class="overflow-hidden bg-white rounded shadow">
+                    <div class="">
+                      <div class="overflow-hidden bg-white rounded shadow h-full">
                           <div class="p-5">
                               <div class="relative">
                                   <a href="#" title="" class="block aspect-w-4 aspect-h-3">
@@ -81,11 +76,11 @@
                                   <a href="#" title="" class="text-black">{{ $item->heading ??' Ho7 Tips to run your remote team
                                       faster and better.' }}</a>
                               </p>
-                              <p class="mt-4 text-base text-gray-600">{{$item->description ?? 'Amet minim mollit non deserunt ullamco est sit
+                              <p class="mt-4 text-base text-gray-600 line-clamp-3">{{$item->description ?? 'Amet minim mollit non deserunt ullamco est sit
                                   aliqua dolor do
                                   amet
                                   sint. Velit officia consequat duis enim velit mollit.'}}</p>
-                              <a href="#" title=""
+                              <a href="{{  route('blog.detail', ['id' => $item->id]) }}" title=""
                                   class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-500 border-b-2 border-transparent hover:border-yellow-500 focus:border-border-yellow-500 hover:text-yellow-500">
                                   Continue Reading      
                                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -100,215 +95,8 @@
                   </div>
                     @empty
                     @endforelse
-                    <div class="swiper-slide">
-                        <div class="overflow-hidden bg-white rounded shadow">
-                            {{-- <div class="p-5">
-                                <div class="relative">
-                                    <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                        <img class="object-cover w-full h-full"
-                                            src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-2.jpg"
-                                            alt="" />
-                                    </a>
-
-                                    <div class="absolute top-4 left-4">
-                                        <span
-                                            class="px-4 py-2 text-xs font-semibold tracking-widest text-theme1 uppercase bg-white rounded-full">
-                                            Marketing </span>
-                                    </div>
-                                </div>
-                                <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
-                                    April 04, 2020
-                                </span>
-                                <p class="mt-5 text-2xl font-semibold">
-                                    <a href="#" title="" class="text-black"> Ho7 Tips to run your remote team
-                                        faster and better. </a>
-                                </p>
-                                <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit
-                                    aliqua dolor do
-                                    amet
-                                    sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="#" title=""
-                                    class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                    Continue Reading
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div> --}}
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="overflow-hidden bg-white rounded shadow">
-                            {{-- <div class="p-5">
-                                <div class="relative">
-                                    <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                        <img class="object-cover w-full h-full"
-                                            src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg"
-                                            alt="" />
-                                    </a>
-
-                                    <div class="absolute top-4 left-4">
-                                        <span
-                                            class="px-4 py-2 text-xs font-semibold tracking-widest text-theme1 uppercase bg-white rounded-full">
-                                            Productivity </span>
-                                    </div>
-                                </div>
-                                <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase"> May
-                                    12, 2020
-                                </span>
-                                <p class="mt-5 text-2xl font-semibold">
-                                    <a href="#" title="" class="text-black"> 5 Productivity tips to write
-                                        faster at morning. </a>
-                                </p>
-                                <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit
-                                    aliqua dolor do
-                                    amet
-                                    sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="#" title=""
-                                    class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                    Continue Reading
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div> --}}
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="overflow-hidden bg-white rounded shadow">
-                            {{-- <div class="p-5">
-                                <div class="relative">
-                                    <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                        <img class="object-cover w-full h-full"
-                                            src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-1.jpg"
-                                            alt="" />
-                                    </a>
-
-                                    <div class="absolute top-4 left-4">
-                                        <span
-                                            class="px-4 py-2 text-xs font-semibold tracking-widest text-theme1 uppercase bg-white rounded-full">
-                                            Lifestyle </span>
-                                    </div>
-                                </div>
-                                <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
-                                    March 21, 2020
-                                </span>
-                                <p class="mt-5 text-2xl font-semibold">
-                                    <a href="#" title="" class="text-black"> How to build coffee inside your
-                                        home in 5 minutes. </a>
-                                </p>
-                                <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit
-                                    aliqua dolor do
-                                    amet
-                                    sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="#" title=""
-                                    class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                    Continue Reading
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div> --}}
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="overflow-hidden bg-white rounded shadow">
-                            {{-- <div class="p-5">
-                                <div class="relative">
-                                    <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                        <img class="object-cover w-full h-full"
-                                            src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-2.jpg"
-                                            alt="" />
-                                    </a>
-
-                                    <div class="absolute top-4 left-4">
-                                        <span
-                                            class="px-4 py-2 text-xs font-semibold tracking-widest text-theme1 uppercase bg-white rounded-full">
-                                            Marketing </span>
-                                    </div>
-                                </div>
-                                <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase">
-                                    April 04, 2020
-                                </span>
-                                <p class="mt-5 text-2xl font-semibold">
-                                    <a href="#" title="" class="text-black"> Ho7 Tips to run your remote team
-                                        faster and better. </a>
-                                </p>
-                                <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit
-                                    aliqua dolor do
-                                    amet
-                                    sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="#" title=""
-                                    class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                    Continue Reading
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div> --}}
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="overflow-hidden bg-white rounded shadow">
-                            {{-- <div class="p-5">
-                                <div class="relative">
-                                    <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                        <img class="object-cover w-full h-full"
-                                            src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-3.jpg"
-                                            alt="" />
-                                    </a>
-
-                                    <div class="absolute top-4 left-4">
-                                        <span
-                                            class="px-4 py-2 text-xs font-semibold tracking-widest text-theme1 uppercase bg-white rounded-full">
-                                            Productivity </span>
-                                    </div>
-                                </div>
-                                <span class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase"> May
-                                    12, 2020
-                                </span>
-                                <p class="mt-5 text-2xl font-semibold">
-                                    <a href="#" title="" class="text-black"> 5 Productivity tips to write
-                                        faster at morning. </a>
-                                </p>
-                                <p class="mt-4 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit
-                                    aliqua dolor do
-                                    amet
-                                    sint. Velit officia consequat duis enim velit mollit.</p>
-                                <a href="#" title=""
-                                    class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                    Continue Reading
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div> --}}
-                        </div>
-                    </div>
-
                 </div>
-
-
             </div>
-
         </div>
     </section>
     <!-- cta -->
