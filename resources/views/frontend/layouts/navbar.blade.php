@@ -39,7 +39,7 @@ class="shadow-lg group-[]/nav:bg-white group-[]/nav:fixed group-[]/nav:animate-f
                   App Development</a></li>
               <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.softwaredevelopment') }}">Software
                   Development</a></li>
-              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.ecommerce') }}">eCommerce
+              <li class="hover:text-yellow-500 border-b-2 relative before:absolute before:border-l-4 before:border-yellow-500 before:inset-0 before:translate-y-full overflow-hidden before:hover:translate-y-0 before:duration-500"><a href="{{ route('service.ecommerce') }}">eCommerce </a></li>
             </ul>
           </div>
 
