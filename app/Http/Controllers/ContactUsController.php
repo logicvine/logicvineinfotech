@@ -3,19 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ContactUsController extends Controller
 {
     public function webdevelopment(){
-        return view('services.webdevelopment');
+        $data = DB::table('blogs')->get();
+        return view('services.webdevelopment',compact('data'));
     }
     public function mobileappdevelopment(){
-        return view('services.mobileappdevelopment');
+        $data = DB::table('blogs')->get();
+        return view('services.mobileappdevelopment',compact('data'));
     }
     public function softwaredevelopment(){
-        return view('services.softwaredevelopment');
+        $data = DB::table('blogs')->get();
+        return view('services.softwaredevelopment' ,compact('data'));
     }
     public function ecommerce(){
-        return view('services.ecommerce');
+        $data = DB::table('blogs')->get();
+        return view('services.ecommerce',compact('data'));
     }
 }
