@@ -20,8 +20,7 @@
                                     Software Development
                                     <span class="before:block  relative inline-block">
                                         <span
-                                            class="relative text-white [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:white]">"
-                                            Company"</span>
+                                            class="relative text-white [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:#eab308]">"Company"</span>
                                     </span>
                                 </div>
                                 <div
@@ -32,14 +31,16 @@
                                     aligns perfectly
                                     with your brand.
                                 </div>
-                                <button
-                                    class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white  w-max">
-                                    <span
-                                        class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                                    <span
-                                        class="relative text-base font-semibold text-white transition duration-300 group-hover:text-white ease">Let
-                                        Coffee With Us</span>
-                                </button>
+                                <a href="{{ route('web.contactus') }}"
+                                    class="flex item-start justify-center w-full ms-auto">
+                                    <div
+                                        class="rounded-lg mx-auto px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+                                        <span
+                                            class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                                        <span
+                                            class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+                                            Coffee With Us</span>
+                                </a>
 
                             </div>
                         </div>
@@ -93,14 +94,16 @@
 
 
                 </p>
-                <button
-                    class="rounded-lg px-3.5 mx-auto py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-theme1 mt-4  w-max">
-                    <span
-                        class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-theme1 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                    <span
-                        class="relative text-base font-semibold text-theme1 transition duration-300 group-hover:text-white ease">Let
-                        Coffee With Us</span>
-                </button>
+                <a href="{{ route('web.contactus') }}"
+                                    class="flex item-start justify-center w-full ms-auto">
+                                    <div
+                                        class="rounded-lg  px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2  font-medium border-yellow-500 mt-4  w-max">
+                                        <span
+                                            class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-yellow-500 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                                        <span
+                                            class="relative text-base font-semibold text-yellow-500 transition duration-300 group-hover:text-white ease">Let
+                                            Coffee With Us</span>
+                                </a>
             </div>
         </div>
     </div>
@@ -108,72 +111,88 @@
 <!-- about section end -->
 <div class="bg-theme1">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div class="lg:grid-cols-3 sm:grid-cols-2 grid gap-4">
-            <div
-                class="bg-white shadow hover:shadow-2xl duration-300 hover:-translate-y-1 p-4 border relative before:absolute before:size-12 before:bg-sky-200/50 before:-inset-6 overflow-hidden before:hover:size-full before:hover:rounded-none before:hover:inset-0 before:duration-300 before:-z-10 before:rounded-full ">
-                <p class="font-semibold text-theme1 text-xl ">
-                    Tailored Solutions </p>
-                <p class="text-base mt-4">Tailored software development guarantees solutions that are specifically
-                    tailored to
-                    your own business requirements, increasing productivity and efficiency
-                </p>
+
+
+
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+             <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">
+                 <div class="text-rose-700 mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor fea icon-md h-9 w-9"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                 </div>
+                 <div class="services-texts">
+                     <h3 class="mb-4 text-xl font-semibold text-ellipsis line-clamp-1">Tailored Solutions</h3>
+                     <p class="text-light-muted mb-6 text-base text-ellipsis line-clamp-4">Tailored software development guarantees solutions that are specifically tailored to your own business requirements, increasing productivity and efficiency</p>
+                     
+                 </div>
+             </div>
+     
+             <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">
+                 <div class="text-rose-700 mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather fea icon-md h-9 w-9"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>
+                 </div>
+                 <div class="services-texts">
+                     <h3 class="mb-4 text-xl font-semibold text-ellipsis line-clamp-1">Scalability
+                    </h3>
+                     <p class="text-light-muted mb-6 text-base text-ellipsis line-clamp-4">Custom software can be built to evolve with your company, easily meeting changing needs as it develops.
+                        .</p>
+                     
+                 </div>
+             </div>
+     
+             <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">
+                 <div class="text-rose-700 mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc fea icon-md h-9 w-9"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                 </div>
+                 <div class="services-texts">
+                     <h3 class="mb-4 text-xl font-semibold text-ellipsis line-clamp-1">Enhanced Security</h3>
+                     <p class="text-light-muted mb-6 text-base text-ellipsis line-clamp-4">You have more control over security protocols with bespoke software, which lowers vulnerabilities and protects important data
+
+
+                    </p>
+                     
+                 </div>
+             </div>
+     
+             <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">
+                 <div class="text-rose-700 mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout fea icon-md h-9 w-9"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                 </div>
+                 <div class="services-texts">
+                     <h3 class="mb-4 text-xl font-semibold text-ellipsis line-clamp-1">Increased Integration
+                    </h3>
+                     <p class="text-light-muted mb-6 text-base text-ellipsis line-clamp-4">Bespoke software can be easily integrated with current workflows and systems, improving overall functionality and optimizing processes.</p>
+                     
+                 </div>
+             </div>
+     
+             <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">
+                 <div class="text-rose-700 mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-watch fea icon-md h-9 w-9"><circle cx="12" cy="12" r="7"></circle><polyline points="12 9 12 12 13.5 13.5"></polyline><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path></svg>
+                 </div>
+                 <div class="services-texts">
+                     <h3 class="mb-4 text-xl font-semibold text-ellipsis line-clamp-1">Long-term Cost-effectiveness
+                    </h3>
+                     <p class="text-light-muted mb-6 text-base text-ellipsis line-clamp-4">Bespoke software frequently turns out to be more cost-effective over time because of lower maintenance and license costs, even though the original expenditure may be more.
+                    </p>
+                     
+                 </div>
+             </div>
+     
+             <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">
+                 <div class="text-rose-700 mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target fea icon-md h-9 w-9"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                 </div>
+                 <div class="services-texts">
+                     <h3 class="mb-4 text-xl font-semibold text-ellipsis line-clamp-1"> Competitive Advantage
+                    </h3>
+                     <p class="text-light-muted mb-6 text-base text-ellipsis line-clamp-4">Our on-demand software solutions can help you thrive in this highly competitive market. So, be ready to set your company apart with our exclusive bespoke software services.</p>
+                     
+                 </div>
+             </div>
+
+
             </div>
-            <div
-                class="bg-white shadow hover:shadow-2xl duration-300 hover:-translate-y-1 p-4 border relative before:absolute before:size-12 before:bg-sky-200/50 before:-inset-6 overflow-hidden before:hover:size-full before:hover:rounded-none before:hover:inset-0 before:duration-300 before:-z-10 before:rounded-full ">
-                <p class="font-semibold text-theme1 text-xl ">Scalability
-                </p>
-                <p class="text-base mt-4">Custom software can be built to evolve with your company, easily meeting
-                    changing
-                    needs as it develops.
-
-                </p>
-            </div>
-            <div
-                class="bg-white shadow hover:shadow-2xl duration-300 hover:-translate-y-1 p-4 border relative before:absolute before:size-12 before:bg-sky-200/50 before:-inset-6 overflow-hidden before:hover:size-full before:hover:rounded-none before:hover:inset-0 before:duration-300 before:-z-10 before:rounded-full ">
-                <p class="font-semibold text-theme1 text-xl ">Enhanced Security
-                </p>
-                <p class="text-base mt-4">You have more control over security protocols with bespoke software, which
-                    lowers
-                    vulnerabilities and protects important data
-                </p>
-            </div>
-            <div
-                class="bg-white shadow hover:shadow-2xl duration-300 hover:-translate-y-1 p-4 border relative before:absolute before:size-12 before:bg-sky-200/50 before:-inset-6 overflow-hidden before:hover:size-full before:hover:rounded-none before:hover:inset-0 before:duration-300 before:-z-10 before:rounded-full ">
-                <p class="font-semibold text-theme1 text-xl ">Increased Integration
-                </p>
-                <p class="text-base mt-4">Bespoke software can be easily integrated with current workflows and systems,
-                    improving overall functionality and optimizing processes.
-
-                </p>
-            </div>
-            <div
-                class="bg-white shadow hover:shadow-2xl duration-300 hover:-translate-y-1 p-4 border relative before:absolute before:size-12 before:bg-sky-200/50 before:-inset-6 overflow-hidden before:hover:size-full before:hover:rounded-none before:hover:inset-0 before:duration-300 before:-z-10 before:rounded-full ">
-                <p class="font-semibold text-theme1 text-xl ">Long-term Cost-effectiveness
-                </p>
-                <p class="text-base mt-4">Bespoke software frequently turns out to be more cost-effective over time
-                    because of
-                    lower maintenance and license costs, even though the original expenditure may be more.
-
-                </p>
-            </div>
-            <div
-                class="bg-white shadow hover:shadow-2xl duration-300 hover:-translate-y-1 p-4 border relative before:absolute before:size-12 before:bg-sky-200/50 before:-inset-6 overflow-hidden before:hover:size-full before:hover:rounded-none before:hover:inset-0 before:duration-300 before:-z-10 before:rounded-full ">
-                <p class="font-semibold text-theme1 text-xl ">Competitive Advantage
-                </p>
-                <p class="text-base mt-4">Our on-demand software solutions can help you thrive in this highly
-                    competitive
-                    market. So, be ready to set your company apart with our exclusive bespoke software services.
-
-
-                </p>
-            </div>
-
-
-
-        </div>
-
-
-
     </div>
 </div>
 

@@ -44,3 +44,32 @@
       }
     });
   </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper('.testimonialSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true, // Set loop to false
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 10 },
+            708: { slidesPerView: 3, spaceBetween: 10 },
+            868: { slidesPerView: 3, spaceBetween: 10 },
+            1024: { slidesPerView: 3, spaceBetween: 10 },
+        },
+        });
+
+        document.getElementById('prevButton').addEventListener('click', () => {
+            swiper.slidePrev();
+        });
+
+        document.getElementById('nextButton').addEventListener('click', () => {
+            swiper.slideNext();
+        });
+    });
+</script>
