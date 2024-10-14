@@ -10,7 +10,7 @@
                               <div class="relative">
                                   <a href="#" title="" class="block aspect-w-4 aspect-h-3">
                                       <img class="object-cover w-full h-full"
-                                          src="{{ asset('gallery').'/'.$item->image }}"
+                                          src="{{ asset('gallery/67052b255b457.jpg').$item->image }}"
                                           alt="" />
                                   </a>
 
