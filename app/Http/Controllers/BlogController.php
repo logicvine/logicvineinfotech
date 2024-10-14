@@ -35,7 +35,9 @@ class BlogController extends Controller
     }
     public function edit($id)
     {
-        $data = Blog::findOrFail($id);
+        
+        $data = DB::table('blogs')->where('id',$id)->first();
+// dd($data);
         return view('admin.blog.edit', compact('data'));
     }
     public function update(Request $request, $id)

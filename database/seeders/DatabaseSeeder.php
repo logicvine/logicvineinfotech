@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'dev@example.com',
-            'password' => Hash::make('password'),
+            'name' => 'Logic Vine',
+            'email' => 'logicvine@gmail.com',
+            'password' => Hash::make('logic@12345'),
         ]);
     }
 }
