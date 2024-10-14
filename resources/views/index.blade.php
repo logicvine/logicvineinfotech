@@ -922,7 +922,7 @@
         </div>
 
       
-            @include('bloglistabout&home')
+            @include('bloglistabouthome')
         {{-- <div class="swiper-slide">
             <div class="overflow-hidden bg-white rounded shadow">
                 <div class="p-5">
