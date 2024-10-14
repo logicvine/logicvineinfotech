@@ -1,16 +1,29 @@
     <!-- header end  -->
     <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">    
-            <div class="max-w-7xl mx-auto newsSwiper swiper mt-4">
-                <div class="grid grid-cols-3 gap-4">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="flex items-end justify-between">
+                <div class="flex-1 text-center mb-10">
+                    <h1 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                        <span class="text-transparent bg-clip-text font-semibold bg-gradient-to-r to-theme1 from-yellow-400">Latest From 
+                        </span> Blog</h1>
+                    <p class="md:text-xl text-base font-medium text-balance mt-5 text-slate-900">Welcome to the Logic Vine
+                        Infotech blog, your go-to resource for insights, trends, and tips in digital development. Explore
+                        articles
+                        on mobile app development, eCommerce strategies, innovative software solutions, and industry best
+                        practices.
+                        empower your business.
+                    </p>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto  mt-4">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     @forelse ($data as $item)
-                    <div class="swiper-slide">
-                      <div class="overflow-hidden bg-white rounded shadow">
+                    <div class="">
+                      <div class="overflow-hidden bg-white rounded shadow h-full">
                           <div class="p-5">
                               <div class="relative">
                                   <a href="#" title="" class="block aspect-w-4 aspect-h-3">
-                                      <img class="object-cover w-full h-full"
-                                          src="{{ asset('gallery').'/'.$item->image }}"
+                                      <img class="object-cover w-full h-full" src="{{ asset('gallery').'/'.$item->image }}"
                                           alt="" />
                                   </a>
 
@@ -32,8 +45,8 @@
                                   amet
                                   sint. Velit officia consequat duis enim velit mollit.'}}</p>
                               <a href="{{  route('blog.detail', ['id' => $item->id]) }}" title=""
-                                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-200 border-b-2 border-transparent hover:border-theme1 focus:border-theme1">
-                                  Continue Reading
+                                  class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-theme1 transition-all duration-500 border-b-2 border-transparent hover:border-yellow-500 focus:border-border-yellow-500 hover:text-yellow-500">
+                                  Continue Reading      
                                   <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                       fill="currentColor">
                                       <path fill-rule="evenodd"
@@ -89,8 +102,8 @@
                 <path opacity="0.05" d="M203 -28.5L4.87819e-05 250.5L881.5 250.5L881.5 -28.5002L203 -28.5Z"
                     fill="url(#paint0_linear_971_6910)"></path>
                 <defs>
-                    <linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287" y2="111"
-                        gradientUnits="userSpaceOnUse">
+                    <linearGradient id="paint0_linear_971_6910" x1="60.5" y1="111" x2="287"
+                        y2="111" gradientUnits="userSpaceOnUse">
                         <stop offset="0.520507" stop-color="white"></stop>
                         <stop offset="1" stop-color="white" stop-opacity="0"></stop>
                     </linearGradient>
