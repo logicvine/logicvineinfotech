@@ -35,7 +35,8 @@
             </div>
         </div>
     </div>
-    <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <section class="py-10 bg-gray-100 sm:py-16 lg:py-24 w-full
+    ">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="flex items-end justify-between">
                 <div class="flex-1 text-center mb-10">
@@ -52,13 +53,14 @@
                 </div>
             </div>
             <div class="max-w-7xl mx-auto  mt-4">
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="w-full">
+                    
                     @forelse ($data as $item)
                     <div class="">
                       <div class="overflow-hidden bg-white rounded shadow h-full">
                           <div class="p-5">
                               <div class="relative">
-                                  <a href="#" title="" class="block aspect-w-4 aspect-h-3">
+                                  <a href="#" title="" class="inline-block  h-[250px] w-full">
                                       <img class="object-cover w-full h-full" src="{{ asset('gallery').'/'.$item->image }}"
                                           alt="" />
                                   </a>
@@ -94,6 +96,7 @@
                       </div>
                   </div>
                     @empty
+
                     @endforelse
                 </div>
             </div>
