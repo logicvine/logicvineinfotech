@@ -57,7 +57,7 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
         <div class="relative mb-12">
-          <img class="w-full rounded-md" src="{{ asset('/assets/img/moiledeveloper.jpeg') }}" alt="" />
+          <img class="w-full rounded-md " src="{{ asset('/assets/img/web-development.webp') }}" alt="" />
 
 
         </div>
@@ -99,8 +99,6 @@
   <div class="bg-theme1">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
  
-
-
 
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
              <div class="text-left rounded-xl bg-white py-8 px-11 transition-all duration-300 custom-cubic-bezier shadow-2xl">

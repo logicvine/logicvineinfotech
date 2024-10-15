@@ -87,7 +87,7 @@
     </div>
 </section>
 <!-- cta -->
-<section class="relative z-10 overflow-hidden bg-theme1 py-16 px-8">
+<!-- <section class="relative z-10 overflow-hidden bg-theme1 py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
         <div class="-mx-4 flex flex-wrap items-center">
             <div class="w-full px-4 lg:w-1/2">
@@ -188,5 +188,5 @@
             </g>
         </svg>
     </span>
-</section>
+</section> -->
 <!-- cta -->

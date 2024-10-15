@@ -55,8 +55,8 @@
             <div class="max-w-7xl mx-auto  mt-4">
                 <div class="w-full">
                     
+                    <div class=" grid grid-cols-3 gap-4 w-full">
                     @forelse ($data as $item)
-                    <div class="">
                       <div class="overflow-hidden bg-white rounded shadow h-full">
                           <div class="p-5">
                               <div class="relative">
@@ -94,10 +94,10 @@
                               </a>
                           </div>
                       </div>
-                  </div>
-                    @empty
-
-                    @endforelse
+                      @empty
+                      
+                      @endforelse
+                    </div>
                 </div>
             </div>
         </div>
