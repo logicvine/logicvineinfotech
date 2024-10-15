@@ -19,7 +19,7 @@ class BlogController extends Controller
             $validate = $request->validate([
                 'cataegory' => 'required|string|max:100',
                 'heading' => 'required|string|max:100',
-                'description' => 'required|string|max:100',
+                'description' => 'required|string',
             ]);
 
             if ($files = $request->file('image')) {
@@ -35,8 +35,8 @@ class BlogController extends Controller
     }
     public function edit($id)
     {
-        $data = Blog::findOrFail($id);
-        return view('admin.blog.edit', compact('data'));
+     $data = DB::table('blogs')->where('id',$id)->first();
+     return view('admin.blog.edit', compact('data'));
     }
     public function update(Request $request, $id)
     {
@@ -45,7 +45,7 @@ class BlogController extends Controller
         $validate = $request->validate([
             'cataegory' => 'required|string|max:100',
             'heading' => 'required|string|max:100',
-            'description' => 'required|string|max:100',
+            'description' => 'required|string',
         ]);
 
         if ($files = $request->file('image')) {
@@ -64,7 +64,7 @@ class BlogController extends Controller
     {  
         $blog = Blog::findOrFail($id);
 
-        if (file_exists(public_path('gallery') . '/' . $blog->image)) {
+        if ($blog->image && file_exists(public_path('gallery') . '/' . $blog->image)) {
             unlink(public_path('gallery') . '/' . $blog->image);
         }
         $blog->delete();

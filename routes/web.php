@@ -29,7 +29,7 @@ Route::group(['prefix' => 'my-admin', 'middleware' => 'auth'], function () {
     Route::any('create', [BlogController::class, 'adminblogpage'])->name('submit.blog');
 
 });
-
+ 
 Route::any('/blog/{id}', [BlogController::class, 'blogdetial'])->name('blog.detail');
 Route::any('service/webdevelopment', [ContactUsController::class, 'webdevelopment'])->name('service.webdevelopment');
 Route::any('service/mobileappdevelopment', [ContactUsController::class, 'mobileappdevelopment'])->name('service.mobileappdevelopment');

@@ -370,7 +370,7 @@
     </div>
   </div>
 
-  @include('bloglistabout&home');
+  @include('bloglistabouthome');
   <!-- cta -->
   {{-- <section class="relative z-10 overflow-hidden bg-theme1 mt-4 py-16 px-8">
     <div class="max-w-7xl mx-auto lg:px-8 px-6">
