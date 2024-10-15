@@ -162,8 +162,8 @@
   <!-- hero section  -->
   <section class="relative min-h-dvh flex justify-center items-center w-full z-50">
     <div
-      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:mix-blend-darken before:bg-gradient-to-br before:from-blue-600/50 before:via-theme1/50 before:to-theme1/80 before:backdrop-blur-sm">
-      <img src="./../assets/img/web-development-company-1519w.webp" alt="">
+      class="absolute inset-0 !h-full size-full before:absolute before:inset-0 before:mix-blend-darken before:bg-gradient-to-br before:from-blue-800/90 before:via-blue-800/70 before:to-blue-800/80 before:backdrop-blur-sm">
+      <img src="{{ asset('/assets/img/e-commerace.jpg') }}" alt="e-commerace" class="size-full object-cover ">
     </div>
     <div class=" h-full !z-20 relative">
       <div class=" h-full relative z-50">
@@ -177,8 +177,7 @@
                     eCommerce Development
                     <span class="before:block  relative inline-block">
                       <span
-                        class="relative text-white [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:#eab308]">"
-                        Company"</span>
+                        class="relative text-white [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:#eab308]">"Company"</span>
                     </span>
                   </div>
                   <div
@@ -225,7 +224,7 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
         <div class="relative mb-12">
-          <img class="w-full rounded-md" src="./../assets/img/Mobile-Developer-1.png" alt="" />
+          <img class="w-full rounded-md" src="{{ asset('/assets/img/starting-small.jpg') }}" alt="" />
 
 
         </div>
