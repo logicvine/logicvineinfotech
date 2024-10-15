@@ -170,29 +170,29 @@
         <div class="group pt-6 sm:pt-8 bg-white rounded-xl">
             <div class="flex items-center justify-center gap-4 *:text-nowrap ">
                 <ul
-                    class="flex items-center  sm:justify-center overflow-y-auto gap-5 bg-zinc-200 p-1.5 rounded-md w-fit">
+                    class="flex items-center  sm:justify-center overflow-y-auto gap-5 bg-gray-100 p-1.5 rounded-md w-fit">
 
                     <li>
                         <label for="webDevelopment"
-                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights:checked]:bg-yellow-500 group-has-[.insights:checked]:text-white font-semibold group-has-[.insights:checked]:border-slate-700">
+                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights:checked]:bg-yellow-500 group-has-[.insights:checked]:text-black font-semibold group-has-[.insights:checked]:border-slate-700">
                             Web Development
                         </label>
                     </li>
                     <li>
                         <label for="mobileappdevelopment"
-                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.mobileappdevelopment:checked]:bg-yellow-500 group-has-[.mobileappdevelopment:checked]:text-white font-semibold group-has-[.mobileappdevelopment:checked]:border-slate-700">
+                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.mobileappdevelopment:checked]:bg-yellow-500 group-has-[.mobileappdevelopment:checked]:text-black font-semibold group-has-[.mobileappdevelopment:checked]:border-slate-700">
                             Mobile App Development
                         </label>
                     </li>
                     <li>
                         <label for="bespokeSoftware"
-                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights1:checked]:bg-yellow-500 group-has-[.insights1:checked]:text-white font-semibold group-has-[.insights1:checked]:border-slate-700">
+                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.insights1:checked]:bg-yellow-500 group-has-[.insights1:checked]:text-black font-semibold group-has-[.insights1:checked]:border-slate-700">
                             Software Development
                         </label>
                     </li>
                     <li>
                         <label for="eCommerce"
-                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.eCommerce:checked]:bg-yellow-500 group-has-[.eCommerce:checked]:text-white font-semibold group-has-[.insights1:checked]:border-slate-700">
+                            class="flex items-center gap-2 min-w-32 sm:min-w-40 justify-center text-xs sm:text-sm cursor-pointer duration-300 transition-all px-3 sm:px-4 py-3 sm:py-4 backdrop-blur-sm text-black rounded-md group-has-[.eCommerce:checked]:bg-yellow-500 group-has-[.eCommerce:checked]:text-black font-semibold group-has-[.insights1:checked]:border-slate-700">
                             eCommerce Development
                         </label>
                     </li>
@@ -214,31 +214,31 @@
                             presence stands out in a competitive market.
                         </p>
 
-                        <div class="flex gap-2 flex-wrap max-w-6xl">
+                        <div class="flex gap-2 flex-wrap max-w-6xl mt-5">
 
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Website Design
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 CMS Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Responsive Website Design
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 API
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Website Redesign
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Web
                                 Portal
                                 Development
@@ -334,43 +334,43 @@
                             business needs. Let us bring your app idea to life!
                         </p>
 
-                        <div class="flex gap-2 flex-wrap max-w-6xl">
+                        <div class="flex gap-2 flex-wrap max-w-6xl mt-5">
 
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Android
                                 App
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Cross Platform App Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 iOS
                                 App
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 PWA
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Flutter
                                 App
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Wearable
                                 App
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 React App
                                 Development
                             </p>
@@ -461,25 +461,25 @@
                             innovation and streamlines operations.
                         </p>
 
-                        <div class="flex gap-2 flex-wrap max-w-6xl">
+                        <div class="flex gap-2 flex-wrap max-w-6xl mt-5">
 
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Bespoke Software
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Saas Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 White
                                 Lebal Software
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 ERP Software
                                 Development
                             </p>
@@ -573,24 +573,24 @@
                             interfaces and advanced features to help your business thrive in the digital marketplace.
                         </p>
 
-                        <div class="flex gap-2 flex-wrap max-w-6xl">
+                        <div class="flex gap-2 flex-wrap max-w-6xl mt-5">
 
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 eCommerce
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Magento Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Shopify
                                 Development
                             </p>
                             <p
-                                class="text-base px-4 py-2 text-white mt-4 rounded-md bg-theme1/50 w-max backdrop-blur-sm text-nowrap">
+                                class="text-base px-4 py-2 text-black  rounded-md bg-gray-200 w-max backdrop-blur-sm text-nowrap">
                                 Worldpress
                                 Development
                             </p>
