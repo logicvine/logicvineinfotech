@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('cataegory', 100)->nullable();    
             $table->string('image', 100)->nullable();    
             $table->string('heading', 100)->nullable();        
-            $table->string('description', 100)->nullable();       
+            $table->longText('description')->nullable();       
             $table->timestamps();
         });
     }

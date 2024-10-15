@@ -50,6 +50,9 @@
                         class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition">
                         </textarea>
                 </div>
+                <button class="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray hover:bg-opacity-90">
+                    Save
+                </button>
             </div>
         </form>
     </div>
