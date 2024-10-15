@@ -37,9 +37,9 @@
             </div>
         <div class="max-w-7xl mx-auto  mt-4">
             <div class="swiper-container testimonialSwiper swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper flex items-stretch">
                     @forelse ($data as $item)
-                        <div class="swiper-slide h-[540px]">
+                        <div class="swiper-slide !h-auto">
                             <div class="overflow-hidden bg-white rounded shadow h-full">
                                 <div class="p-5">
                                     <div class="relative">
