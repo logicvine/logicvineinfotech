@@ -44,8 +44,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <p class="mt-6 text-lg font-medium leading-relaxed text-theme1">8502 Preston Rd. Ingle, Maine
-                            98380, USA
+                        <p class="mt-6 text-lg font-medium leading-relaxed text-theme1">Office No : 215-216, Manglam Metropolis Tower, Near Purani chungi, Ajmer Road, Jaipur ( Raj. ) PIN 302019
                         </p>
                     </div>
                 </div>
