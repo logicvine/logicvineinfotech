@@ -4,9 +4,9 @@
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r to-gray-900 from-yellow-400">Contact  
                 </span> Us</h1>
-            <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-500">Amet minim mollit non deserunt
+            <!-- <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-500">Amet minim mollit non deserunt
                 ullamco
-                est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+                est sit aliqua dolor do amet sint. Velit officia consequat duis.</p> -->
         </div>
 
         <div class="max-w-5xl mx-auto mt-12 sm:mt-16">
